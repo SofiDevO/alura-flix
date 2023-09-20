@@ -1,9 +1,11 @@
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 
+
+
 const Hero = () => {
 	return (
-		<div className="hero">
+		<div >
 			<div>
 				<h1>Front End</h1>
 				<h3>Entorno de Desarrollo con Windows</h3>

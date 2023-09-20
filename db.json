@@ -66,18 +66,18 @@
         {
             "id": 7,
             "title": "Curso de wordpress 4",
-            "metadescription": "Es necesario evitar que tus mascotas contraigan estos parásitos",
+            "metadescription": "Instalación de plugins escenciales",
             "categoria": "wordpress",
-            "img": "",
-            "url": ""
+            "img": "https://i.ytimg.com/vi/eeoa0f4IVhs/maxresdefault.jpg",
+            "url": "https://www.youtube.com/embed/eeoa0f4IVhs"
         },
         {
             "id": 8,
             "title": "Curso de wordpress 5",
             "metadescription": "Es necesario evitar que tus mascotas contraigan estos parásitos",
             "categoria": "wordpress",
-            "img": "",
-            "url": ""
+            "img": "https://i.ytimg.com/vi/eeoa0f4IVhs/maxresdefault.jpg",
+            "url": "https://www.youtube.com/embed/eeoa0f4IVhs"
         }
     ]
 }
