@@ -1,0 +1,67 @@
+{
+    "categorias": [
+        {
+            "id": "frontend",
+            "nombre": "frontend"
+        },
+        {
+            "id": "wordpress",
+            "nombre": "Curso Wordpress"
+        }
+        ,
+        {
+            "id": "wsl",
+            "nombre": "Curso WSL"
+        }
+    ],
+    "videos": [
+        {
+            "id": 1,
+            "title": "Tutorial Modo oscuro",
+            "metadescription": "¿Sabes que es el 'prefers-color-scheme'? Aprende como implementar Modo oscuro en tus sitios web.",
+            "categoria": "frontend",
+            "img":"https://i.ytimg.com/vi/tSVyfcpJ1yc/maxresdefault.jpg",
+            "url": "https://www.youtube.com/embed/tSVyfcpJ1yc?si=LX4XJKpIprEOnKdP"
+        },
+        {
+            "id": 2,
+            "title": "Fake API con json-server",
+            "metadescription": "Aprende a desplegar tu propia fake api con vercel y json server para tus proyectos de frontend",
+            "categoria": "frontend",
+            "img":"https://i.ytimg.com/vi/bZ6oqJEA5K0/maxresdefault.jpg",
+            "url": "https://www.youtube.com/embed/bZ6oqJEA5K0?si=VkqhPSFknGQEWofg"
+        },
+        {
+            "id": 3,
+            "title": "¿Cómo hacer deploy de Github a Hostinger?",
+            "metadescription": "Es necesario evitar que tus mascotas contraigan estos parásitos",
+            "categoria": "frontend",
+            "img": "https://i.ytimg.com/vi/RwBcNPybF4Q/maxresdefault.jpg",
+            "url": "https://www.youtube.com/embed/RwBcNPybF4Q?si=TVwtAS4vIaNka7pk"
+        },
+        {
+            "id": 4,
+            "title": "Curso de wordpress 1",
+            "metadescription": "primeros pasos con Local Wordpress",
+            "categoria": "wordpress",
+            "img": "https://i.ytimg.com/vi/XqL6bDsQxbM/maxresdefault.jpg",
+            "url": "https://www.youtube.com/embed/XqL6bDsQxbM"
+        },
+        {
+            "id": 5,
+            "title": "Curso de wordpress 2",
+            "metadescription": "Es necesario evitar que tus mascotas contraigan estos parásitos",
+            "categoria": "wordpress",
+            "img": "https://i.ytimg.com/vi/RwBcNPybF4Q/maxresdefault.jpg",
+            "url": "https://www.youtube.com/embed/RwBcNPybF4Q?si=TVwtAS4vIaNka7pk"
+        },
+        {
+            "id": 3,
+            "title": "Curso de wordpress 3",
+            "metadescription": "Es necesario evitar que tus mascotas contraigan estos parásitos",
+            "categoria": "wordpress",
+            "img": "https://i.ytimg.com/vi/XqL6bDsQxbM/maxresdefault.jpg",
+            "url": "https://www.youtube.com/embed/XqL6bDsQxbM"
+        }
+    ]
+}

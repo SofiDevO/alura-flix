@@ -1,14 +1,19 @@
-import Header from './components/Header';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import ErrorPage from "./error-page";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  return (
-    <Router>
-      <Header/>
-    <h1>Hola Sofidev</h1>
-    </Router>
-  )
+	return (
+		<Router>
+			<Header />
+			<Routes>
+				<Route path="/" element={<Home />} />
+			<Route path="*" element={<ErrorPage />} />
+			</Routes>
+
+		</Router>
+	);
 }
 
-export default App
+export default App;
