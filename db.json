@@ -50,18 +50,34 @@
         {
             "id": 5,
             "title": "Curso de wordpress 2",
-            "metadescription": "Es necesario evitar que tus mascotas contraigan estos parásitos",
+            "metadescription": "Configuraci[on de Wordpress",
             "categoria": "wordpress",
-            "img": "https://i.ytimg.com/vi/RwBcNPybF4Q/maxresdefault.jpg",
-            "url": "https://www.youtube.com/embed/RwBcNPybF4Q?si=TVwtAS4vIaNka7pk"
+            "img": "https://i.ytimg.com/vi/9YbBVmiBPbs/maxresdefault.jpg",
+            "url": "https://www.youtube.com/embed/9YbBVmiBPbs&t=3s"
         },
         {
-            "id": 3,
+            "id": 6,
             "title": "Curso de wordpress 3",
+            "metadescription": "Editor de texto Gutenberg",
+            "categoria": "wordpress",
+            "img": "https://i.ytimg.com/vi/oqqTEeD8F0c/maxresdefault.jpg",
+            "url": "https://www.youtube.com/embed/oqqTEeD8F0c&t=35s"
+        },
+        {
+            "id": 7,
+            "title": "Curso de wordpress 4",
             "metadescription": "Es necesario evitar que tus mascotas contraigan estos parásitos",
             "categoria": "wordpress",
-            "img": "https://i.ytimg.com/vi/XqL6bDsQxbM/maxresdefault.jpg",
-            "url": "https://www.youtube.com/embed/XqL6bDsQxbM"
+            "img": "",
+            "url": ""
+        },
+        {
+            "id": 8,
+            "title": "Curso de wordpress 5",
+            "metadescription": "Es necesario evitar que tus mascotas contraigan estos parásitos",
+            "categoria": "wordpress",
+            "img": "",
+            "url": ""
         }
     ]
 }
