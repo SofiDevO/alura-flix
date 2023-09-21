@@ -1,11 +1,10 @@
 import Hero from "../components/Hero"
-import ListaVideos from "../components/ListVideos"
-
+import MultipleItems from "../components/ListVideos"
 const Home = ()=>{
     return(
         <main>
             <Hero/>
-            <ListaVideos/>
+            <MultipleItems/>
         </main>
     )
 }

@@ -1,26 +1,31 @@
-import LiteYouTubeEmbed from "react-lite-youtube-embed";
-import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
+import styled from "styled-components";
+import TextContainer from "./TextContainer";
+import YoutubeEmbed from "./EmbedYT";
 
-
+const HeroContainer = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 83.2rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	background-image: linear-gradient(
+			90deg,
+			rgba(1, 8, 22, 0.811) 59%,
+			rgba(0, 5, 13, 0.849) 95%
+		),
+		url("/src/assets/img/JAVASCRIPT.png");
+`;
 
 const Hero = () => {
 	return (
-		<div >
-			<div>
-				<h1>Front End</h1>
-				<h3>Entorno de Desarrollo con Windows</h3>
-				<p>
-					Con este curso aprenderás a preparar tu equipo con las herramientas
-					necesarias para empezar a programar o comenzar a aprender. Vamos a
-					hacer las configuraciones necesarias para que puedas crear un proyecto
-					sin mayores obstáculos. También aprenderás a moverte en la terminal.
-					este es un curso para principiantes 🐣
-				</p>
-			</div>
-			<div>
-				<LiteYouTubeEmbed id="tSVyfcpJ1yc" title="Tutorial Modo oscuro" />
-			</div>
-		</div>
+		<HeroContainer>
+			<TextContainer />
+			<YoutubeEmbed embedId='JKThdA1UbTw'/>
+		</HeroContainer>
 	);
 };
 

@@ -12,6 +12,10 @@
         {
             "id": "wsl",
             "nombre": "Curso WSL"
+        },
+        {
+            "id": "alura",
+            "nombre": "Videos Alura"
         }
     ],
     "videos": [
@@ -21,7 +25,7 @@
             "metadescription": "¿Sabes que es el 'prefers-color-scheme'? Aprende como implementar Modo oscuro en tus sitios web.",
             "categoria": "frontend",
             "img":"https://i.ytimg.com/vi/tSVyfcpJ1yc/maxresdefault.jpg",
-            "url": "https://www.youtube.com/embed/tSVyfcpJ1yc?si=LX4XJKpIprEOnKdP"
+            "embedId": "tSVyfcpJ1yc?si=LX4XJKpIprEOnKdP"
         },
         {
             "id": 2,
@@ -29,7 +33,7 @@
             "metadescription": "Aprende a desplegar tu propia fake api con vercel y json server para tus proyectos de frontend",
             "categoria": "frontend",
             "img":"https://i.ytimg.com/vi/bZ6oqJEA5K0/maxresdefault.jpg",
-            "url": "https://www.youtube.com/embed/bZ6oqJEA5K0?si=VkqhPSFknGQEWofg"
+            "embedId": "bZ6oqJEA5K0?si=VkqhPSFknGQEWofg"
         },
         {
             "id": 3,
@@ -37,15 +41,15 @@
             "metadescription": "Es necesario evitar que tus mascotas contraigan estos parásitos",
             "categoria": "frontend",
             "img": "https://i.ytimg.com/vi/RwBcNPybF4Q/maxresdefault.jpg",
-            "url": "https://www.youtube.com/embed/RwBcNPybF4Q?si=TVwtAS4vIaNka7pk"
+            "embedId": "RwBcNPybF4Q?si=TVwtAS4vIaNka7pk"
         },
         {
             "id": 4,
             "title": "Curso de wordpress 1",
             "metadescription": "primeros pasos con Local Wordpress",
             "categoria": "wordpress",
-            "img": "https://i.ytimg.com/vi/XqL6bDsQxbM/maxresdefault.jpg",
-            "url": "https://www.youtube.com/embed/XqL6bDsQxbM"
+            "img": "XqL6bDsQxbM",
+            "embedId": "https://i.ytimg.com/vi/XqL6bDsQxbM/maxresdefault.jpg"
         },
         {
             "id": 5,
@@ -53,7 +57,7 @@
             "metadescription": "Configuraci[on de Wordpress",
             "categoria": "wordpress",
             "img": "https://i.ytimg.com/vi/9YbBVmiBPbs/maxresdefault.jpg",
-            "url": "https://www.youtube.com/embed/9YbBVmiBPbs&t=3s"
+            "embedId": "9YbBVmiBPbs"
         },
         {
             "id": 6,
@@ -61,7 +65,7 @@
             "metadescription": "Editor de texto Gutenberg",
             "categoria": "wordpress",
             "img": "https://i.ytimg.com/vi/oqqTEeD8F0c/maxresdefault.jpg",
-            "url": "https://www.youtube.com/embed/oqqTEeD8F0c&t=35s"
+            "embedId": "oqqTEeD8F0c"
         },
         {
             "id": 7,
@@ -69,15 +73,63 @@
             "metadescription": "Instalación de plugins escenciales",
             "categoria": "wordpress",
             "img": "https://i.ytimg.com/vi/eeoa0f4IVhs/maxresdefault.jpg",
-            "url": "https://www.youtube.com/embed/eeoa0f4IVhs"
+            "embedId": "eeoa0f4IVhs"
         },
         {
             "id": 8,
             "title": "Curso de wordpress 5",
-            "metadescription": "Es necesario evitar que tus mascotas contraigan estos parásitos",
+            "metadescription": "Theme Builder de Elementor",
             "categoria": "wordpress",
-            "img": "https://i.ytimg.com/vi/eeoa0f4IVhs/maxresdefault.jpg",
-            "url": "https://www.youtube.com/embed/eeoa0f4IVhs"
+            "img":  "https://i.ytimg.com/vi/-7OUmtHA7qs/maxresdefault.jpg",
+            "embedId": "7OUmtHA7qs"
+        },
+        {
+            "id": 9,
+            "title": "Curso de WSL 01",
+            "metadescription": "Curso de WSl, instalación",
+            "categoria": "wsl",
+            "img": "https://i.ytimg.com/vi/JKThdA1UbTw/maxresdefault.jpg",
+            "embedId": "JKThdA1UbTw"
+        },
+        {
+            "id": 10,
+            "title": "Curso de WSL 02",
+            "metadescription": "Curso de wsl , Introducción a línea de comandos",
+            "categoria": "wsl",
+            "img": "https://i.ytimg.com/vi/aFvk5UepU0o/maxresdefault.jpg",
+            "embedId": "aFvk5UepU0o"
+        },
+        {
+            "id": 11,
+            "title": "Curso de WSL 03",
+            "metadescription": "Instalando plugins y temas con Oh-myzsh",
+            "categoria": "wsl",
+            "img": "https://i.ytimg.com/vi/jA2PIgWX3BI/maxresdefault.jpg",
+            "embedId": "jA2PIgWX3BI"
+        },
+        {
+            "id": 12,
+            "title": "Videos alura",
+            "metadescription": "Frontend",
+            "categoria": "alura",
+            "img": "https://i.ytimg.com/vi/GJfOSoaXk4s/maxresdefault.jpg",
+            "embedId": "GJfOSoaXk4s"
+        },
+        {
+            "id": 13,
+            "title": "Videos alura",
+            "metadescription": "frontend team",
+            "categoria": "alura",
+            "img": "https://i.ytimg.com/vi/rpvrLaBQwgg/maxresdefault.jpg",
+            "embedId": "rpvrLaBQwgg"
+        },
+        {
+            "id": 14,
+            "title": "Videos alura",
+            "metadescription": "Habllando del crud",
+            "categoria": "alura",
+            "img": "https://i.ytimg.com/vi/jr_98HCSTZc/maxresdefault.jpg",
+            "embedId": "jr_98HCSTZc"
         }
     ]
 }

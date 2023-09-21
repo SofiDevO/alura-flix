@@ -10,13 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "antd": "^5.9.2",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-lite-youtube-embed": "^2.3.52",
     "react-router-dom": "^6.16.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
     "sort-by": "^0.0.2",
     "styled-components": "^6.0.8",
     "uuid": "^9.0.1"
