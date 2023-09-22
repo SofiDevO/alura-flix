@@ -109,7 +109,7 @@ const ImagenVideo = styled.img`
   width: 50rem;
   border: 3px solid ${(props) => props.borderColor};
   @media screen and (max-width: 768px) {
-    width: 33rem;
+    width: 32rem;
   }
 `;
 const CategoriaTitulo = styled.h3`

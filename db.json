@@ -36,7 +36,7 @@
         {
             "id": 4,
             "title": "Fake API con json-server",
-            "metadescription": "Aprende a desplegar tu propia fake api con vercel y json server para tus proyectos de frontend",
+            "metadescription": "Aprende a desplegar tu propia fake api con vercel y json server para tus proyectos de frontend. \n\nAdemás, te dejo el repositorio para que lo puedas clonar",
             "categoria": {
                 "nombre": "frontend",
                 "color": "#6BD1FF"
@@ -47,7 +47,7 @@
         {
             "id": 5,
             "title": "¿Cómo hacer deploy de Github a Hostinger?",
-            "metadescription": "Es necesario evitar que tus mascotas contraigan estos parásitos",
+            "metadescription": "Aprende a desplegar tu repositorio privado desde Github a Hostinger. \n\n Podrás hacer cambios y actualizarlos en tiempo real con tan solo un PUSH ❤️",
             "categoria": {
                 "nombre": "frontend",
                 "color": "#6BD1FF"
@@ -58,7 +58,7 @@
         {
             "id": 6,
             "title": "Curso de wordpress 1",
-            "metadescription": "primeros pasos con Local Wordpress",
+            "metadescription": "primeros pasos con Local Wordpress.\n\n Aprenderás a instalar Wordpress de forma local y hacer tus primeras configuraciones.",
             "categoria": {
                 "nombre": "wordpress",
                 "color": "#FFBA05"
@@ -69,13 +69,13 @@
         {
             "id": 7,
             "title": "Curso de wordpress 2",
-            "metadescription": "Configuraci[on de Wordpress",
+            "metadescription": "Haremos las primeras configuraciones a nuestro wordpress para que pueda indexarse y posicionarse de manera optimizada. \n\nEstructuraremos el menú y las las permalinks",
             "categoria": {
                 "nombre": "wordpress",
                 "color": "#FFBA05"
             },
             "img": "9YbBVmiBPbs",
-            "embedId": "9YbBVmiBPbs"
+            "embedId": "oHg5SJYRHA0"
         },
         {
             "id": 8,
@@ -91,7 +91,7 @@
         {
             "id": 9,
             "title": "Curso de wordpress 4",
-            "metadescription": "Instalación de plugins escenciales",
+            "metadescription": "Bienvenidos al curso de Wordpress con ELEMNTOR. En este curso aprenderás a crear páginas web, totalmente atractivas y responsivas.\n\nLo mejor de todo es que  es totalmente gratis, ya que trabajaremos ofline usando el software de LOCAL. Así que lo único que necesitas es una PC y conexión a internet (Para ver estos videos 😜)",
             "categoria": {
                 "nombre": "wordpress",
                 "color": "#FFBA05"
@@ -123,30 +123,8 @@
         },
         {
             "id": 12,
-            "title": "Curso de WSL 01",
-            "metadescription": "Curso de WSl, instalación",
-            "categoria": {
-                "nombre": "wsl",
-                "color": "#00C86F"
-            },
-            "img": "JKThdA1UbTw",
-            "embedId": "JKThdA1UbTw"
-        },
-        {
-            "id": 13,
-            "title": "Curso de WSL 01",
-            "metadescription": "Curso de WSl, instalación",
-            "categoria": {
-                "nombre": "wsl",
-                "color": "#00C86F"
-            },
-            "img": "JKThdA1UbTw",
-            "embedId": "JKThdA1UbTw"
-        },
-        {
-            "id": 14,
             "title": "Curso de WSL 02",
-            "metadescription": "Curso de wsl , Introducción a línea de comandos",
+            "metadescription": "Ya que instalamos la terminal, vamos a sumergirnos de lleno en la Command Line o  Línea de comandos. \n\nAprenderemos como mover archivos, crearlos y editarlos",
             "categoria": {
                 "nombre": "wsl",
                 "color": "#00C86F"
@@ -155,9 +133,9 @@
             "embedId": "aFvk5UepU0o"
         },
         {
-            "id": 15,
+            "id": 13,
             "title": "Curso de WSL 03",
-            "metadescription": "Instalando plugins y temas con Oh-myzsh",
+            "metadescription": "En esta clase vamos a aprender a instalar Plugins y Temas para nuestra terminal.\n\n Así que la dejaremos super bonita pero también aumentaremos nuestra productividad.",
             "categoria": {
                 "nombre": "wsl",
                 "color": "#00C86F"
@@ -166,9 +144,42 @@
             "embedId": "jA2PIgWX3BI"
         },
         {
+            "id": 14,
+            "title": "Instalar Ubuntu en Windows 10 con WSL",
+            "metadescription": "¿Necesitas tener un entorno #linux en #Windows sin una máquina virtual o dual boot? #WSL viene al rescate.\n\nEn este vídeo veremos cómo instalar Ubuntu con WSL en Windows 10, además, veremos algunos comandos útiles que seguro te ayudan en caso de tener problemas durante la instalación de WSL en tu máquina",
+            "categoria": {
+                "nombre": "wsl",
+                "color": "#00C86F"
+            },
+            "img": "L4f1XHrSJEg",
+            "embedId": "L4f1XHrSJEg"
+        },
+        {
+            "id": 15,
+            "title": "WSL2 - Windows corriendo contenedores Linux??",
+            "metadescription": "Hoy hablamos de WSL2, o Windows Subsystem Linux, un sistema de virtualización optimizado para Linux, que virtualiza un Kernel de Linux modificado por Microsoft para poder correr contenedores Linux con Docker.",
+            "categoria": {
+                "nombre": "wsl",
+                "color": "#00C86F"
+            },
+            "img": "_Hne4gm8plo",
+            "embedId": "_Hne4gm8plo"
+        },
+        {
+            "id": 122125,
+            "title": "BEST Web Dev Setup? Windows & Linux at the same time (WSL)",
+            "metadescription": "Setup the ultimate Web Development environment with Windows and Linux 🐧 using WSL. Make the command line look cool, then add node, git, docker, and more. ",
+            "categoria": {
+                "nombre": "wsl",
+                "color": "#00C86F"
+            },
+            "img": "-atblwgc63E",
+            "embedId": "-atblwgc63E"
+        },
+        {
             "id": 16,
-            "title": "Videos alura",
-            "metadescription": "Frontend",
+            "title": "¿Qué es JavaScript?",
+            "metadescription": "JavaScript: ¿qué es y cómo se hizo este lenguaje que genera muchas discusiones y debates entre la gente del área de desarrollo? \n\n Genesys y Gabriela nos hablan exactamente de esto en este Alura Tips.",
             "categoria": {
                 "nombre": "alura",
                 "color": "#7b00e0"
@@ -178,25 +189,25 @@
         },
         {
             "id": 17,
-            "title": "Videos alura",
-            "metadescription": "frontend team",
+            "title": "Equipo Front End #AluraMás",
+            "metadescription": "JavaScript: ¿qué es y cómo se hizo este lenguaje que genera muchas discusiones y debates entre la gente del área de desarrollo? \n\nGenesys y Gabriela nos hablan exactamente de esto en este Alura Tips.",
             "categoria": {
                 "nombre": "alura",
                 "color": "#7b00e0"
             },
             "img": "rpvrLaBQwgg",
-            "embedId": "rpvrLaBQwgg"
+            "embedId": "oHg5SJYRHA0"
         },
         {
             "id": 18,
-            "title": "Videos alura",
-            "metadescription": "frontend team",
+            "title": "¿Cómo ser un Profesional en T? Conociendo al Tech Guide",
+            "metadescription": "El término profesional en T es muy utilizado en los días de hoy, pero ¿sabes que quiere decir y cómo ser un profesional en T? \n\nEn este video Christian Velasco, Head de Alura Latam, no ayudará a enteder sobre ese término y nos explicará como podemos convertirnos en un profesional en T, enseñándonos una herramienta muy válida para quienes quiere aprender más al respecto.",
             "categoria": {
                 "nombre": "alura",
                 "color": "#7b00e0"
             },
-            "img": "rpvrLaBQwgg",
-            "embedId": "rpvrLaBQwgg"
+            "img": "0udk1vXmwkc",
+            "embedId": "0udk1vXmwkc"
         },
         {
             "id": 19,
@@ -217,8 +228,8 @@
                 "nombre": "alura",
                 "color": "#7b00e0"
             },
-            "img": "rpvrLaBQwgg",
-            "embedId": "rpvrLaBQwgg"
+            "img": "PlaQ913yggM",
+            "embedId": "PlaQ913yggM"
         },
         {
             "id": 21,
