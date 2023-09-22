@@ -1,0 +1,61 @@
+html {
+	font-size: 62.5%;
+}
+/* Slider elements */
+.slick-list,
+.slick-slider,
+.slick-track {
+	padding: 3rem 0;
+}
+
+.slick-prev,
+.slick-next {
+	position: absolute;
+	z-index: 5;
+}
+
+.slick-slider .slick-prev {
+	left: 1px;
+	background: rgba(255, 255, 255, 0);
+	box-shadow: 0 8px 25px 0 rgba(31, 38, 135, 0.252);
+	backdrop-filter: blur(9.5px);
+	-webkit-backdrop-filter: blur(9.5px);
+	border-radius: 5px;
+	border-right: 1px solid rgba(255, 255, 255, 0.18);
+	height: 20rem;
+	width: 10rem;
+}
+.slick-slider .slick-next {
+	right: 1px;
+    background: rgba(255, 255, 255, 0);
+	box-shadow: 0 8px 25px 0 rgba(31, 38, 135, 0.252);
+	backdrop-filter: blur(9.5px);
+	-webkit-backdrop-filter: blur(9.5px);
+	border-radius: 10px;
+	border-left: 1px solid rgba(255, 255, 255, 0.18);
+	height: 20rem;
+	width: 10rem;
+}
+@media screen and (max-width:768px) {
+    .slick-slider .slick-prev {
+        background:unset;
+        box-shadow: unset;
+        backdrop-filter: unset;
+        -webkit-backdrop-filter:unset;
+        border-radius: unset;
+        border: unset;
+        height:unset;
+        width:unset;
+    }
+    .slick-slider .slick-next {
+        background:unset;
+        box-shadow: unset;
+        backdrop-filter: unset;
+        -webkit-backdrop-filter:unset;
+        border-radius: unset;
+        border: unset;
+        height:unset;
+        width:unset;
+    }
+    
+}

@@ -22,6 +22,9 @@ const Titulo = styled.h1`
 	line-height: normal;
 	border-radius: 0.4rem;
 	background: #6bd1ff;
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
 `;
 
 const Styledh3 = styled.h3`
@@ -30,7 +33,11 @@ const Styledh3 = styled.h3`
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
-    padding-top: 4rem;
+	padding-top: 4rem;
+	@media screen and (max-width: 768px) {
+		font-size: 2.7rem;
+		text-align: center;
+	}
 `;
 const Parrafo = styled.p`
 	font-family: Roboto;
@@ -38,7 +45,10 @@ const Parrafo = styled.p`
 	font-style: normal;
 	font-weight: 300;
 	line-height: normal;
-    padding: 0.9rem;
+	padding: 0.9rem;
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
 `;
 
 const TextContainer = () => {
@@ -53,6 +63,7 @@ const TextContainer = () => {
 				mayores obstáculos. También aprenderás a moverte en la terminal. este es
 				un curso para principiantes 🐣
 			</Parrafo>
+			
 		</CajaTexto>
 	);
 };

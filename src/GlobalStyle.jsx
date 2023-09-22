@@ -9,9 +9,6 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         transition: all .5s ease;
     }
-    html{
-        font-size: 62.5%;
-    }
 
 `
 

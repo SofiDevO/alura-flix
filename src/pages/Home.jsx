@@ -1,10 +1,24 @@
 import Hero from "../components/Hero"
-import MultipleItems from "../components/ListVideos"
+import styled from "styled-components"
+import VideoLista from "../components/Videos"
+const ListVideos = styled.div`
+    position: relative;
+    background-color: black;
+    height: auto;
+    color: white;
+`
+
+
+
 const Home = ()=>{
     return(
         <main>
             <Hero/>
-            <MultipleItems/>
+            <ListVideos>
+                <VideoLista/>
+            </ListVideos>
+                
+
         </main>
     )
 }

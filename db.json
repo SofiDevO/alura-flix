@@ -2,20 +2,24 @@
     "categorias": [
         {
             "id": "frontend",
-            "nombre": "frontend"
+            "nombre": "frontend",
+            "color": "#6BD1FF"
         },
         {
             "id": "wordpress",
-            "nombre": "Curso Wordpress"
+            "nombre": "Curso Wordpress",
+            "color": "#FFBA05"
         }
         ,
         {
             "id": "wsl",
-            "nombre": "Curso WSL"
+            "nombre": "Curso WSL",
+            "color": "#00C86F"
         },
         {
             "id": "alura",
-            "nombre": "Videos Alura"
+            "nombre": "Videos Alura",
+            "color": "#7b00e0"
         }
     ],
     "videos": [
@@ -25,7 +29,23 @@
             "metadescription": "¿Sabes que es el 'prefers-color-scheme'? Aprende como implementar Modo oscuro en tus sitios web.",
             "categoria": "frontend",
             "img":"https://i.ytimg.com/vi/tSVyfcpJ1yc/maxresdefault.jpg",
-            "embedId": "tSVyfcpJ1yc?si=LX4XJKpIprEOnKdP"
+            "embedId": "tSVyfcpJ1yc"
+        },
+        {
+            "id": 1,
+            "title": "Tutorial Modo oscuro",
+            "metadescription": "¿Sabes que es el 'prefers-color-scheme'? Aprende como implementar Modo oscuro en tus sitios web.",
+            "categoria": "frontend",
+            "img":"https://i.ytimg.com/vi/tSVyfcpJ1yc/maxresdefault.jpg",
+            "embedId": "tSVyfcpJ1yc"
+        },
+        {
+            "id": 1,
+            "title": "Tutorial Modo oscuro",
+            "metadescription": "¿Sabes que es el 'prefers-color-scheme'? Aprende como implementar Modo oscuro en tus sitios web.",
+            "categoria": "frontend",
+            "img":"https://i.ytimg.com/vi/tSVyfcpJ1yc/maxresdefault.jpg",
+            "embedId": "tSVyfcpJ1yc"
         },
         {
             "id": 2,
@@ -33,7 +53,7 @@
             "metadescription": "Aprende a desplegar tu propia fake api con vercel y json server para tus proyectos de frontend",
             "categoria": "frontend",
             "img":"https://i.ytimg.com/vi/bZ6oqJEA5K0/maxresdefault.jpg",
-            "embedId": "bZ6oqJEA5K0?si=VkqhPSFknGQEWofg"
+            "embedId": "bZ6oqJEA5K0"
         },
         {
             "id": 3,
@@ -41,15 +61,15 @@
             "metadescription": "Es necesario evitar que tus mascotas contraigan estos parásitos",
             "categoria": "frontend",
             "img": "https://i.ytimg.com/vi/RwBcNPybF4Q/maxresdefault.jpg",
-            "embedId": "RwBcNPybF4Q?si=TVwtAS4vIaNka7pk"
+            "embedId": "RwBcNPybF4Q"
         },
         {
             "id": 4,
             "title": "Curso de wordpress 1",
             "metadescription": "primeros pasos con Local Wordpress",
             "categoria": "wordpress",
-            "img": "XqL6bDsQxbM",
-            "embedId": "https://i.ytimg.com/vi/XqL6bDsQxbM/maxresdefault.jpg"
+            "img": "https://i.ytimg.com/vi/XqL6bDsQxbM/maxresdefault.jpg",
+            "embedId": "XqL6bDsQxbM"
         },
         {
             "id": 5,
@@ -81,7 +101,7 @@
             "metadescription": "Theme Builder de Elementor",
             "categoria": "wordpress",
             "img":  "https://i.ytimg.com/vi/-7OUmtHA7qs/maxresdefault.jpg",
-            "embedId": "7OUmtHA7qs"
+            "embedId": "-7OUmtHA7qs"
         },
         {
             "id": 9,
@@ -114,6 +134,30 @@
             "categoria": "alura",
             "img": "https://i.ytimg.com/vi/GJfOSoaXk4s/maxresdefault.jpg",
             "embedId": "GJfOSoaXk4s"
+        },
+        {
+            "id": 13,
+            "title": "Videos alura",
+            "metadescription": "frontend team",
+            "categoria": "alura",
+            "img": "https://i.ytimg.com/vi/rpvrLaBQwgg/maxresdefault.jpg",
+            "embedId": "rpvrLaBQwgg"
+        },
+        {
+            "id": 13,
+            "title": "Videos alura",
+            "metadescription": "frontend team",
+            "categoria": "alura",
+            "img": "https://i.ytimg.com/vi/rpvrLaBQwgg/maxresdefault.jpg",
+            "embedId": "rpvrLaBQwgg"
+        },
+        {
+            "id": 13,
+            "title": "Videos alura",
+            "metadescription": "frontend team",
+            "categoria": "alura",
+            "img": "https://i.ytimg.com/vi/rpvrLaBQwgg/maxresdefault.jpg",
+            "embedId": "rpvrLaBQwgg"
         },
         {
             "id": 13,

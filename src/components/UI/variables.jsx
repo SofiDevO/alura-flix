@@ -10,5 +10,5 @@ export const wordpress = "#FFBA05";
 
 export const colorGrayDark = "#000000f7";
 export const colorGrayMedium = "#000000e5"
-export const colorGrayLight = "#f5f5f5"
-export const colorGrayLigther = "#9e9e9e"
+export const colorGrayLight = "#9e9e9e"
+export const colorGrayLigther = "#f5f5f5 "

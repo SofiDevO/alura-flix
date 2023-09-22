@@ -8,8 +8,9 @@ import styled from "styled-components";
 		justify-content: center;
 		align-items: center;
 		flex-shrink: 0;
-		@media screen and (max-width:768px){
-			text-align: center;
+		@media screen and (max-width:768px) {
+			width: 10.5208rem;
+			height: 2.5rem;
 		}
 	`;
 

@@ -18,13 +18,30 @@ const HeroContainer = styled.div`
 			rgba(0, 5, 13, 0.849) 95%
 		),
 		url("/src/assets/img/JAVASCRIPT.png");
+	YoutubeEmbed {
+	}
+	@media screen and (max-width: 768px) {
+		height: 25.8072rem;
+		align-content: flex-end;
+		
+	}
+`;
+
+const ContenedorYT = styled.div`
+	display: block;
+	
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
 `;
 
 const Hero = () => {
 	return (
 		<HeroContainer>
 			<TextContainer />
-			<YoutubeEmbed embedId='JKThdA1UbTw'/>
+			<ContenedorYT>
+				<YoutubeEmbed embedId="JKThdA1UbTw" />
+			</ContenedorYT>
 		</HeroContainer>
 	);
 };
