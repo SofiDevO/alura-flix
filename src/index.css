@@ -15,7 +15,7 @@ html {
 }
 
 .slick-slider .slick-prev {
-	left: 1px;
+	left: -45px;
 	background: rgba(255, 255, 255, 0);
 	box-shadow: 0 8px 25px 0 rgba(31, 38, 135, 0.252);
 	backdrop-filter: blur(9.5px);
@@ -26,7 +26,7 @@ html {
 	width: 10rem;
 }
 .slick-slider .slick-next {
-	right: 1px;
+	right: -35px;
 	background: rgba(255, 255, 255, 0);
 	box-shadow: 0 8px 25px 0 rgba(31, 38, 135, 0.252);
 	backdrop-filter: blur(9.5px);
@@ -36,6 +36,11 @@ html {
 	height: 20rem;
 	width: 10rem;
 }
+
+.slick-slider .slick-prev:before, .slick-slider .slick-next:before{
+    font-size: 37px;
+}
+    
 @media screen and (max-width: 768px) {
 	.slick-list,
 	.slick-slider,
@@ -43,6 +48,7 @@ html {
 		padding: 1.7rem 0;
 	}
 	.slick-slider .slick-prev {
+        left: 1px;
 		background: unset;
 		box-shadow: unset;
 		backdrop-filter: unset;
@@ -53,6 +59,7 @@ html {
 		width: unset;
 	}
 	.slick-slider .slick-next {
+        right: 1px;
 		background: unset;
 		box-shadow: unset;
 		backdrop-filter: unset;

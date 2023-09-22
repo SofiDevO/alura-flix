@@ -1,6 +1,29 @@
 import styled from "styled-components";
 import TextContainer from "./TextContainer";
-import YoutubeEmbed from "./EmbedYT";
+import { Link } from "react-router-dom";
+import portada from "../assets/img/portadaVideoYT.jpg"
+import { useNavigate } from "react-router-dom";
+import { Btn } from "./UI";
+
+const Hero = () => {
+	const navigate = useNavigate();
+	return (
+		<HeroContainer>
+			<TextContainer />
+			<CajaBtn>
+			<Btn onClick={()=>navigate('/videos/11')}>ver</Btn>
+			</CajaBtn>
+
+			<ContenedorYT>
+				<Link to={"/videos/11"}>
+				<PortadaYT src={portada} alt="portada YouTube" />
+				</Link>
+			</ContenedorYT>
+		</HeroContainer>
+	);
+};
+
+export default Hero;
 
 const HeroContainer = styled.div`
 	display: flex;
@@ -21,29 +44,26 @@ const HeroContainer = styled.div`
 	YoutubeEmbed {
 	}
 	@media screen and (max-width: 768px) {
-		height: 25.8072rem;
+		height: 31.8072rem;
 		align-content: flex-end;
-		
+		padding: 2rem 0;
 	}
 `;
 
 const ContenedorYT = styled.div`
 	display: block;
-	
+
 	@media screen and (max-width: 768px) {
 		display: none;
 	}
 `;
+const CajaBtn = styled.div`
+	display: none;
+	@media screen and (max-width:768px) {
+		display: block;
+	}
+`
 
-const Hero = () => {
-	return (
-		<HeroContainer>
-			<TextContainer />
-			<ContenedorYT>
-				<YoutubeEmbed embedId="JKThdA1UbTw" />
-			</ContenedorYT>
-		</HeroContainer>
-	);
-};
-
-export default Hero;
+const PortadaYT = styled.img`
+	width: 59rem;
+`

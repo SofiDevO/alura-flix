@@ -1,9 +1,11 @@
 import Hero from "../components/Hero"
 import styled from "styled-components"
-import VideoLista from "../components/Videos"
+import VideoLista from "../components/SliderElements/Videos"
+import { colorGrayMedium } from "../components/UI/variables"
+import Footer from "../components/Footer"
 const ListVideos = styled.div`
     position: relative;
-    background-color: black;
+    background-color: ${colorGrayMedium};
     height: auto;
     color: white;
     padding: 0 4rem;
@@ -21,9 +23,12 @@ const Home = ()=>{
             <ListVideos>
                 <VideoLista/>
             </ListVideos>
+            
+            <Footer/>
+        </main>
+
                 
 
-        </main>
     )
 }
 

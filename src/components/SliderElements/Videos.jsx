@@ -1,24 +1,26 @@
 import styled from "styled-components";
 import { useState, useEffect } from "react";
-import { colorFrontend } from "./UI/variables";
-import { buscar } from "../api/api";
+import { colorFrontend } from "../UI/variables";
+import { buscar } from "../../api/api";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const CajaVideo = styled.div`
-	width: 80%;
 	max-width: 1280px;
 	margin: 0 auto;
 	padding: 3rem 0;
 	text-align: center;
+	:hover {
+		transform: scale(1.1);
+	}
 `;
 const ImagenVideo = styled.img`
 	width: 50rem;
 	border: 3px solid ${colorFrontend};
 	@media screen and (max-width: 768px) {
-		width: 31rem;
+		width: 33rem;
 	}
 `;
 const CategoriaTitulo = styled.h3`
@@ -100,7 +102,7 @@ const VideoLista = () => {
 							{videos.map((video) => {
 								const { id, title, img } = video;
 								return (
-									<Link to={`/ver/${id}`} key={id}>
+									<Link to={`/videos/${id}`} key={id}>
 										<CajaVideo>
 											<article>
 												<ImagenVideo src={img} alt={title} />
