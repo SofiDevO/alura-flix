@@ -1,21 +1,31 @@
 import { useState, useEffect } from "react";
-import { buscar } from "../../api/api";
+import { buscar } from "../api/api";
 
 const VideoCategorias = ({ children }) => {
   const [videosPorCategoria, setVideosPorCategoria] = useState({});
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await buscar("/videos");
-      const videosCategorizados = response.reduce((acc, video) => {
-        const categoria = video.categoria;
-        if (!acc[categoria]) {
-          acc[categoria] = [];
-        }
-        acc[categoria].push(video);
-        return acc;
-      }, {});
-      setVideosPorCategoria(videosCategorizados);
+      try {
+        // Realizar una solicitud a la API para obtener los videos
+        const response = await buscar("/videos");
+
+        // Organizar los videos por categoría
+        const videosCategorizados = response.reduce((acc, video) => {
+          const categoria = video.categoria.nombre; // Acceder al nombre de la categoría
+
+          if (!acc[categoria]) {
+            acc[categoria] = [];
+          }
+          acc[categoria].push(video);
+          return acc;
+        }, {});
+
+        // Actualizar el estado con los videos organizados por categoría
+        setVideosPorCategoria(videosCategorizados);
+      } catch (error) {
+        console.error("Error al obtener los videos:", error);
+      }
     };
 
     fetchData();

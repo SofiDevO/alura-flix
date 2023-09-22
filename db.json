@@ -1,198 +1,234 @@
 {
-    "categorias": [
-        {
-            "id": "frontend",
-            "nombre": "frontend",
-            "descripcion":"",
-            "color": "#6BD1FF"
-        },
-        {
-            "id": "wordpress",
-            "nombre": "Curso Wordpress",
-            "descripcion":"",
-            "color": "#FFBA05"
-        }
-        ,
-        {
-            "id": "wsl",
-            "nombre": "Curso WSL",
-            "descripcion":"",
-            "color": "#00C86F"
-        },
-        {
-            "id": "alura",
-            "nombre": "Videos Alura",
-            "descripcion":"",
-            "color": "#7b00e0"
-        }
-    ],
     "videos": [
         {
             "id": 1,
             "title": "Tutorial Modo oscuro",
-            "metadescription": "¿Sabes que es el 'prefers-color-scheme'? \nAprende como implementar Modo oscuro en tus sitios web con javascript. \n \nEste es un curso con nivel medio",
-            "categoria": "frontend",
-            "img":"https://i.ytimg.com/vi/tSVyfcpJ1yc/maxresdefault.jpg",
+            "metadescription": "¿Sabes qué es el 'prefers-color-scheme'? Aprende cómo implementar el Modo oscuro en tus sitios web con JavaScript. Este es un curso de nivel medio.",
+            "categoria": {
+                "nombre": "frontend",
+                "color": "#6BD1FF"
+            },
+            "img": "tSVyfcpJ1yc",
             "embedId": "tSVyfcpJ1yc"
         },
         {
             "id": 2,
-            "title": "",
-            "metadescription": "",
-            "categoria": "frontend",
-            "img":"https://i.ytimg.com/vi/tSVyfcpJ1yc/maxresdefault.jpg",
-            "embedId": "tSVyfcpJ1yc"
+            "title": "Taller de Diseño con FIGMA para DEVELOPERS | HackerLIVE#40",
+            "metadescription": "¿Cómo aprender diseño como programadores? \n\nCarmen Ansio, como experta, nos ayuda a conseguirlo con este taller desde cero para aprender Figma, una de las herramientas más utilizadas en el sector.",
+            "categoria": {
+                "nombre": "frontend",
+                "color": "#6BD1FF"
+            },
+            "img": "jy0IgvV42es",
+            "embedId": "jy0IgvV42es"
         },
         {
             "id": 3,
-            "title": "Tutorial Modo oscuro",
-            "metadescription": "¿Sabes que es el 'prefers-color-scheme'? Aprende como implementar Modo oscuro en tus sitios web.",
-            "categoria": "frontend",
-            "img":"https://i.ytimg.com/vi/tSVyfcpJ1yc/maxresdefault.jpg",
-            "embedId": "tSVyfcpJ1yc"
+            "title": "PHP está muerto en 2023? | #laFunción 9x2",
+            "metadescription": "Parece que cada año se intenta matar a PHP \n\n ¿pero es eso cierto? En el directo de hoy exploramos a ver si tiene sentido o no aprender php como lenguaje de programación y veremos sus principales frameworks como Laravel y Symfony.",
+            "categoria": {
+                "nombre": "frontend",
+                "color": "#6BD1FF"
+            },
+            "img": "f8W220hkmgA",
+            "embedId": "f8W220hkmgA"
         },
         {
             "id": 4,
             "title": "Fake API con json-server",
             "metadescription": "Aprende a desplegar tu propia fake api con vercel y json server para tus proyectos de frontend",
-            "categoria": "frontend",
-            "img":"https://i.ytimg.com/vi/bZ6oqJEA5K0/maxresdefault.jpg",
+            "categoria": {
+                "nombre": "frontend",
+                "color": "#6BD1FF"
+            },
+            "img": "bZ6oqJEA5K0",
             "embedId": "bZ6oqJEA5K0"
         },
         {
             "id": 5,
             "title": "¿Cómo hacer deploy de Github a Hostinger?",
             "metadescription": "Es necesario evitar que tus mascotas contraigan estos parásitos",
-            "categoria": "frontend",
-            "img": "https://i.ytimg.com/vi/RwBcNPybF4Q/maxresdefault.jpg",
+            "categoria": {
+                "nombre": "frontend",
+                "color": "#6BD1FF"
+            },
+            "img": "RwBcNPybF4Q",
             "embedId": "RwBcNPybF4Q"
         },
         {
             "id": 6,
             "title": "Curso de wordpress 1",
             "metadescription": "primeros pasos con Local Wordpress",
-            "categoria": "wordpress",
-            "img": "https://i.ytimg.com/vi/XqL6bDsQxbM/maxresdefault.jpg",
+            "categoria": {
+                "nombre": "wordpress",
+                "color": "#FFBA05"
+            },
+            "img": "XqL6bDsQxbM",
             "embedId": "XqL6bDsQxbM"
         },
         {
             "id": 7,
             "title": "Curso de wordpress 2",
             "metadescription": "Configuraci[on de Wordpress",
-            "categoria": "wordpress",
-            "img": "https://i.ytimg.com/vi/9YbBVmiBPbs/maxresdefault.jpg",
+            "categoria": {
+                "nombre": "wordpress",
+                "color": "#FFBA05"
+            },
+            "img": "9YbBVmiBPbs",
             "embedId": "9YbBVmiBPbs"
         },
         {
             "id": 8,
             "title": "Curso de wordpress 3",
             "metadescription": "Editor de texto Gutenberg",
-            "categoria": "wordpress",
-            "img": "https://i.ytimg.com/vi/oqqTEeD8F0c/maxresdefault.jpg",
+            "categoria": {
+                "nombre": "wordpress",
+                "color": "#FFBA05"
+            },
+            "img": "oqqTEeD8F0c",
             "embedId": "oqqTEeD8F0c"
         },
         {
             "id": 9,
             "title": "Curso de wordpress 4",
             "metadescription": "Instalación de plugins escenciales",
-            "categoria": "wordpress",
-            "img": "https://i.ytimg.com/vi/eeoa0f4IVhs/maxresdefault.jpg",
+            "categoria": {
+                "nombre": "wordpress",
+                "color": "#FFBA05"
+            },
+            "img": "eeoa0f4IVhs",
             "embedId": "eeoa0f4IVhs"
         },
         {
             "id": 10,
             "title": "Curso de wordpress 5",
             "metadescription": "Theme Builder de Elementor\n \n En esta clase vamos a crear nuestra primera página con Elementor. \n \n Aprenderás como maquetar y obtener un diseño responsive con los Bloques de elementor",
-            "categoria": "wordpress",
-            "img":  "https://i.ytimg.com/vi/BxKuJ4pLRSI/maxresdefault.jpg",
+            "categoria": {
+                "nombre": "wordpress",
+                "color": "#FFBA05"
+            },
+            "img": "BxKuJ4pLRSI",
             "embedId": "BxKuJ4pLRSI"
         },
         {
             "id": 11,
             "title": "Curso de WSL 01",
             "metadescription": "Con este curso aprenderás a preparar tu equipo con las herramientas necesarias para empezar a programar o comenzar a aprender.\n \n  Vamos a hacer las configuraciones necesarias para que puedas crear un proyecto sin mayores obstáculos. \n \nTambién aprenderás a moverte en la terminal. este es un curso para principiantes 🐣",
-            "categoria": "wsl",
-            "img": "https://i.ytimg.com/vi/JKThdA1UbTw/maxresdefault.jpg",
+            "categoria": {
+                "nombre": "wsl",
+                "color": "#00C86F"
+            },
+            "img": "JKThdA1UbTw",
             "embedId": "JKThdA1UbTw"
         },
         {
             "id": 12,
             "title": "Curso de WSL 01",
             "metadescription": "Curso de WSl, instalación",
-            "categoria": "wsl",
-            "img": "https://i.ytimg.com/vi/JKThdA1UbTw/maxresdefault.jpg",
+            "categoria": {
+                "nombre": "wsl",
+                "color": "#00C86F"
+            },
+            "img": "JKThdA1UbTw",
             "embedId": "JKThdA1UbTw"
         },
         {
             "id": 13,
             "title": "Curso de WSL 01",
             "metadescription": "Curso de WSl, instalación",
-            "categoria": "wsl",
-            "img": "https://i.ytimg.com/vi/JKThdA1UbTw/maxresdefault.jpg",
+            "categoria": {
+                "nombre": "wsl",
+                "color": "#00C86F"
+            },
+            "img": "JKThdA1UbTw",
             "embedId": "JKThdA1UbTw"
         },
         {
             "id": 14,
             "title": "Curso de WSL 02",
             "metadescription": "Curso de wsl , Introducción a línea de comandos",
-            "categoria": "wsl",
-            "img": "https://i.ytimg.com/vi/aFvk5UepU0o/maxresdefault.jpg",
+            "categoria": {
+                "nombre": "wsl",
+                "color": "#00C86F"
+            },
+            "img": "aFvk5UepU0o",
             "embedId": "aFvk5UepU0o"
         },
         {
             "id": 15,
             "title": "Curso de WSL 03",
             "metadescription": "Instalando plugins y temas con Oh-myzsh",
-            "categoria": "wsl",
-            "img": "https://i.ytimg.com/vi/jA2PIgWX3BI/maxresdefault.jpg",
+            "categoria": {
+                "nombre": "wsl",
+                "color": "#00C86F"
+            },
+            "img": "jA2PIgWX3BI",
             "embedId": "jA2PIgWX3BI"
         },
         {
             "id": 16,
             "title": "Videos alura",
             "metadescription": "Frontend",
-            "categoria": "alura",
-            "img": "https://i.ytimg.com/vi/GJfOSoaXk4s/maxresdefault.jpg",
+            "categoria": {
+                "nombre": "alura",
+                "color": "#7b00e0"
+            },
+            "img": "GJfOSoaXk4s",
             "embedId": "GJfOSoaXk4s"
         },
         {
             "id": 17,
             "title": "Videos alura",
             "metadescription": "frontend team",
-            "categoria": "alura",
-            "img": "https://i.ytimg.com/vi/rpvrLaBQwgg/maxresdefault.jpg",
+            "categoria": {
+                "nombre": "alura",
+                "color": "#7b00e0"
+            },
+            "img": "rpvrLaBQwgg",
             "embedId": "rpvrLaBQwgg"
         },
         {
             "id": 18,
             "title": "Videos alura",
             "metadescription": "frontend team",
-            "categoria": "alura",
-            "img": "https://i.ytimg.com/vi/rpvrLaBQwgg/maxresdefault.jpg",
+            "categoria": {
+                "nombre": "alura",
+                "color": "#7b00e0"
+            },
+            "img": "rpvrLaBQwgg",
             "embedId": "rpvrLaBQwgg"
         },
         {
             "id": 19,
             "title": "Videos alura",
             "metadescription": "frontend team",
-            "categoria": "alura",
-            "img": "https://i.ytimg.com/vi/rpvrLaBQwgg/maxresdefault.jpg",
-            "embedId": "rpvrLaBQwgg"
+            "categoria": {
+                "nombre": "alura",
+                "color": "#7b00e0"
+            },
+            "img": "UuAX5azcvDQ",
+            "embedId": "UuAX5azcvDQ"
         },
         {
             "id": 20,
             "title": "Videos alura",
             "metadescription": "frontend team",
-            "categoria": "alura",
-            "img": "https://i.ytimg.com/vi/rpvrLaBQwgg/maxresdefault.jpg",
+            "categoria": {
+                "nombre": "alura",
+                "color": "#7b00e0"
+            },
+            "img": "rpvrLaBQwgg",
             "embedId": "rpvrLaBQwgg"
         },
         {
             "id": 21,
             "title": "Videos alura",
             "metadescription": "Habllando del crud",
-            "categoria": "alura",
-            "img": "https://i.ytimg.com/vi/jr_98HCSTZc/maxresdefault.jpg",
+            "categoria": {
+                "nombre": "alura",
+                "color": "#7b00e0"
+            },
+            "img": "jr_98HCSTZc",
             "embedId": "jr_98HCSTZc"
         }
     ]
