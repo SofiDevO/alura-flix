@@ -6,6 +6,10 @@ const ListVideos = styled.div`
     background-color: black;
     height: auto;
     color: white;
+    padding: 0 4rem;
+    @media screen and (max-width:768px) {
+        padding: 0;
+    }
 `
 
 
