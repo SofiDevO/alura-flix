@@ -1,5 +1,4 @@
 import  {createGlobalStyle } from "styled-components"
-import { colorGrayDark, colorGrayLight } from "./components/UI/variables"
 
 
 const GlobalStyle = createGlobalStyle`
@@ -12,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
         transition: all .5s ease;
     }
     body{
-        background-color: ${colorGrayDark};
+        background-color: black;
     }
         
         

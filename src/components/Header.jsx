@@ -1,7 +1,7 @@
 import NavBar from "./NavBar";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import { colorGrayDark, colorGrayLight, colorGrayLigther } from "./UI/variables";
+import { colorGrayDark, colorGrayLight, colorGrayLigther, colorGrayMedium } from "./UI/variables";
 
 const HeaderContainer = styled.header`
 		width: 100%;
@@ -12,7 +12,7 @@ const HeaderContainer = styled.header`
 		align-items: center;
 		padding: 0 3.9rem;
 		border: 1px solid #000;
-		background: ${colorGrayDark};
+		background: ${colorGrayMedium};
 		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 		@media screen and (max-width:768px){
 			justify-content: center;

@@ -44,10 +44,11 @@ const VerVideoContainer = styled.div`
 	height: 80vh;
     display: flex;
     padding: 2rem;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     color: #9e9e9e;
     font-size: 1.8rem;
+
 
 	@media screen and (max-width:768px) {
 		flex-direction: column;
