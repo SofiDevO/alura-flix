@@ -21,7 +21,7 @@ const PlayVideo = ({url}) => {
 	return (
         <>
        <BtnContainer>
-        <Btn onClick={()=>navigate("/")}>Volver</Btn>
+        <Btn onClick={()=>navigate(`/videos/${id}`)}>Volver</Btn>
        </BtnContainer>
 		<YouTubeResponsive>
 			<YoutubeEmbed embedId={vid.embedId} />

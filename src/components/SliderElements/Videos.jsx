@@ -76,7 +76,7 @@ const VideoLista = () => {
                     <CajaVideo>
                       <article>
                         <ImagenVideo
-                          src={`https://i.ytimg.com/vi/${img}/maxresdefault.jpg`}
+                          src={`http://img.youtube.com/vi/${img}/maxresdefault.jpg`}
                           alt={title}
                           style={{ borderColor: categoria.color }}
                         />

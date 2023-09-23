@@ -20,7 +20,7 @@ const VerVideo = ({ url }) => {
 	return (
 		<Section>
 			<VerVideoContainer>
-				<Portada src={`https://i.ytimg.com/vi/${vid.img}/maxresdefault.jpg`} alt={vid.title} />
+				<Portada src={`http://img.youtube.com/vi/${vid.img}/maxresdefault.jpg`} alt={vid.title} />
 				<InfoContainer>
 					<h1>{vid.title}</h1>
 					<Descripcion>{vid.metadescription}</Descripcion>

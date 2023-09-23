@@ -252,6 +252,17 @@
       },
       "metadescription": "10 hrs de cupid para programar mientras Jhon Ceena baila",
       "id": 122127
+    },
+    {
+      "title": "Las 6 maneras de aplicar estilos CSS en React",
+      "embedId": "J-hGXVPyT-Y",
+      "img": "J-hGXVPyT-Y",
+      "categoria": {
+        "nombre": "frontend",
+        "color": "#6BD1FF"
+      },
+      "metadescription": "- Requisitos: Ninguno/n/n\n- Dificultad: Fácil/n/n\n- Recomendación: El peor/n/n\n- Ojo con: Estilos en línea son una mala idea 100pre :v.",
+      "id": "39121aa7-a7ff-4435-87fe-4176d068ac86"
     }
   ]
 }
