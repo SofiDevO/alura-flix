@@ -3,7 +3,6 @@ import CustomTextInput from "../components/FormularioElements/CampoTexto";
 import { ColorPicker, useColor } from "react-color-palette";
 import "react-color-palette/css";
 
-
 import {
 	Btn,
 	Form,
@@ -20,6 +19,9 @@ const NewCategory = () => {
 		register,
 		handleSubmit,
 		formState: { errors },
+		reset,
+		getValues,
+		setValue,
 	} = useForm();
 	const onSubmit = (data) => console.log(data);
 	console.log(errors);
@@ -46,10 +48,8 @@ const NewCategory = () => {
 					{errors.title && <span>El Título es un campo requerido</span>}
 				</CajaInputs>
 				<div>
-					<input type="submit" value="Enviar" />
-					<Btn variant="blue" onClick={() => navigate("/add-category")}>
-						Agregar Categoría
-					</Btn>
+					<input type="submit" value="Guardar" />
+					<Btn onClick={() => reset()}>Limpiar </Btn>
 				</div>
 			</Form>
 		</Container>

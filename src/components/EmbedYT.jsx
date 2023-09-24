@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 const YoutubeEmbed = ({ embedId }) => (
 	<>
 		<iframe
-			width="90%"
-			height="90%"
+			width="80%"
+			height="100%"
 			src={`https://www.youtube.com/embed/${embedId}/?autoplay=1`}
 			frameBorder="0"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -52,9 +52,10 @@ const VerVideoContainer = styled.div`
 
 	@media screen and (max-width:768px) {
 		flex-direction: column;
-		justify-content: center;
-		padding: 1rem;
-		height: 86.4vh;
+    justify-content: center;
+    padding: 1rem;
+    height: 93.4vh;
+}
 	}
 `;
 const Portada = styled.img`

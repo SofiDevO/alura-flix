@@ -93,7 +93,7 @@ export const Select = styled.select`
 	width: 100%;
 	text-align: center;
 	z-index: 20;
-	font-size: 1.7rem;
+	font-size: 1.9rem;
 	color: ${colorGrayLigther};
 	padding: 1rem;
 	outline: none;
@@ -105,7 +105,7 @@ export const Select = styled.select`
 
 export const TextAreaWrapper = styled.textarea`
 	width: 100%;
-	height: 150px;
+	height: 130px;
 	border: none;
 	padding: 8px;
 	font-size: 16px;
