@@ -4,7 +4,7 @@ import { colorGrayLigther, colorGrayLight, colorPrimario } from "./variables";
 isPropValid("size");
 
 export const Btn = styled.button`
-	width: ${(props) => (props.size === "full" ? " 320px" : "18rem")};
+	width: 18rem;
 	height: 5.4rem;
 	flex-shrink: 0;
 	text-align: center;
@@ -17,6 +17,10 @@ export const Btn = styled.button`
 	background-color: ${(props) =>
 		props.variant === "blue" ? "#2A7AE4" : "#dedede"};
 	color: ${(props) => (props.variant === "blue" ? "#f5f5f5" : "#000000")};
+	@media screen and (max-width: 768px) {
+		width: ${(props) => (props.size === "full" ? " 320px" : "14rem")};
+		font-size: 1.5rem;
+	}
 `;
 
 /* Elementos del formulario */
@@ -43,10 +47,11 @@ export const FormularioTitulo = styled.h2`
 
 export const ElementosFormulario = styled.div`
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 4rem;
 `;
 export const TextoLabel = styled.label`
 	display: flex;
@@ -118,18 +123,71 @@ export const BarraError = styled.span`
 	border-bottom: 3px solid;
 	border-color: ${(props) => (props.variant === "red" ? "#ff6347" : "#2A7AE4")};
 	width: 100%;
-`;
+	`;
+
+	export const SpanMensaje = styled.span`
+		color: ${(props) => (props.variant === "red" ? "#ff6347" : "#2A7AE4")};
+		@media screen and (max-width:768px) {
+		font-size: 1.3rem	
+	}
+	`
+	
 
 export const CajaBotones = styled.div`
-	width: 88%;
+	    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10rem;
+    padding: 0;
+    justify-content: center;
+`;
+export const ContenedorBotones = styled.div`
 	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	margin-top: 10rem;
-	padding: 0;
-	justify-content: center;
+	justify-content: space-between;
+	width: 81%;
+	align-items: flex-end;
+	padding: 0 0 5rem;
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+		align-items: center;
+	}
 `;
 
 export const EviarLimpiar = styled.div`
-	width: 80%;
+	display: flex;
+    align-items: center;
+    margin-top: 10rem;
+    padding: 0;
+    width: 30%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	@media screen and (max-width: 768px) {
+		align-items: center;
+		display: flex;
+
+		margin-top: 10rem;
+		padding: 13px;
+		width: 100%;
+		justify-content: space-evenly;
+		gap: 1rem;
+	}
+`;
+
+export const InputSubmit = styled.input`
+	color: ${colorGrayLigther};
+	width: 18rem;
+	height: 5.4rem;
+	flex-shrink: 0;
+	text-align: center;
+	font-family: "Roboto";
+	font-size: 2.1rem;
+	font-style: normal;
+	font-weight: 600;
+	border: none;
+	border-radius: 0.5rem;
+	background-color: ${colorPrimario};
+	@media screen and (max-width: 768px) {
+		width: 14rem;
+		font-size: 1.5rem;
+	}
 `;

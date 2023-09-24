@@ -11,6 +11,10 @@ import {
 	ContainerInput,
 	CajaInputs,
 	BarraError,
+	InputSubmit,
+	ContenedorBotones,
+	CajaBotones,
+	EviarLimpiar
 } from "../components/UI";
 
 const NewCategory = () => {
@@ -47,10 +51,15 @@ const NewCategory = () => {
 					</ContainerInput>
 					{errors.title && <span>El Título es un campo requerido</span>}
 				</CajaInputs>
-				<div>
-					<input type="submit" value="Guardar" />
+				<CajaBotones>
+				<ContenedorBotones>
+				<EviarLimpiar>
+					<InputSubmit type="submit" value="Guardar" />
+				</EviarLimpiar>
 					<Btn onClick={() => reset()}>Limpiar </Btn>
-				</div>
+				</ContenedorBotones>
+				</CajaBotones>
+
 			</Form>
 		</Container>
 	);

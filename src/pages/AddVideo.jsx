@@ -14,10 +14,12 @@ import {
 	CajaInputs,
 	BarraError,
 	EviarLimpiar,
-	CajaBotones,
+  ContenedorBotones,
   TextAreaWrapper,
   Select,
-  TextoLabel
+  InputSubmit,
+  TextoLabel,
+  SpanMensaje
 } from "../components/UI";
 
 export default function AddVideo() {
@@ -99,7 +101,7 @@ export default function AddVideo() {
 								<BarraError></BarraError>
 							)}
 						</ContainerInput>
-						{errors.title && <span>El Título es un campo requerido</span>}
+						{errors.title && <SpanMensaje variant="red">El Título es un campo requerido</SpanMensaje>}
 					</CajaInputs>
 
 					<CajaInputs>
@@ -117,7 +119,7 @@ export default function AddVideo() {
 								<BarraError></BarraError>
 							)}
 						</ContainerInput>
-						{errors.embedId && <span>El ID es requerido</span>}
+						{errors.embedId && <SpanMensaje variant="red">El ID es requerido</SpanMensaje>}
 					</CajaInputs>
 
 					<CajaInputs>
@@ -136,9 +138,9 @@ export default function AddVideo() {
 							)}{" "}
 						</ContainerInput>
 						{errors.img && (
-							<span>
+							<SpanMensaje variant="red">
 								Agrega el ID para la imagen(La misma que el id del video)
-							</span>
+							</SpanMensaje>
 						)}
 					</CajaInputs>
 
@@ -166,7 +168,7 @@ export default function AddVideo() {
 								<BarraError></BarraError>
 							)}{" "}
 						</ContainerInput>
-						{errors.categoria && <span>Debes seleccionar una categoría</span>}
+						{errors.categoria && <SpanMensaje variant="red">Debes seleccionar una categoría</SpanMensaje>}
 					</CajaInputs>
 					<CajaInputs>
 						<ContainerInput>
@@ -184,21 +186,21 @@ export default function AddVideo() {
 							)}
 						</ContainerInput>
 						{errors.metadescription && (
-							<span>Debes agregar una descripción</span>
+							<SpanMensaje variant="red">Debes agregar una descripción</SpanMensaje>
 						)}
 					</CajaInputs>
 				</ElementosFormulario>
 
-				<CajaBotones>
+				<ContenedorBotones>
 					<EviarLimpiar>
-						<input type="submit" value="Nuevo Video" />
+						<InputSubmit type="submit" value="Nuevo Video" />
 						<Btn onClick={() => reset()}>Limpiar</Btn>
 					</EviarLimpiar>
 
 					<Btn variant="blue" onClick={() => navigate("/add-category")}>
 						Agregar Categoría
 					</Btn>
-				</CajaBotones>
+				</ContenedorBotones>
 			</Form>
 		</Container>
 	);
