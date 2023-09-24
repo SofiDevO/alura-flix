@@ -6,6 +6,7 @@ import { Btn } from "../components/UI";
 import { obtenerCategorias, agregarVideo } from "../api/api"; // Importa la función obtenerCategorias en lugar de buscar
 
 export default function AddVideo() {
+  // Configuración de React Hook Form
   const {
     register,
     handleSubmit,
@@ -17,6 +18,7 @@ export default function AddVideo() {
   const navigate = useNavigate();
   const [categorias, setCategorias] = useState([]);
 
+  // useEffect para cargar las categorías cuando se monta el componente
   useEffect(() => {
     const fetchCategorias = async () => {
       try {
@@ -30,6 +32,7 @@ export default function AddVideo() {
     fetchCategorias();
   }, []);
 
+  // Función que se ejecuta cuando se envía el formulario
   const onSubmit = async (data) => {
     try {
       const categoriaId = getValues("categoria");
@@ -49,8 +52,8 @@ export default function AddVideo() {
         };
   
         await agregarVideo(videoData);
-        reset();
-        navigate("/");
+        reset(); // Limpia el formulario después de enviar
+        navigate("/"); // Navega de regreso a la página principal
       } else {
         console.error("Categoría no encontrada");
       }
@@ -62,6 +65,7 @@ export default function AddVideo() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
+      {/* Campos del formulario */}
       <input
         type="text"
         placeholder="Titulo"

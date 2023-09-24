@@ -3,6 +3,25 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { colorGrayDark, colorGrayLight, colorGrayLigther, colorGrayMedium } from "./UI/variables";
 
+
+
+	
+const Header = () => {
+	const navigate = useNavigate();
+
+	return (
+		<>
+		<HeaderContainer>
+			<NavBar />
+			<BtnHeader  onClick={() => navigate("/add-video")}>Nuevo Video</BtnHeader>
+		</HeaderContainer>
+	</>
+	);
+};
+
+export default Header;
+
+
 const HeaderContainer = styled.header`
 		width: 100%;
 		height: 94px;
@@ -37,19 +56,3 @@ const HeaderContainer = styled.header`
 			display: none;
 		}
 	`;
-
-	
-const Header = () => {
-	const navigate = useNavigate();
-
-	return (
-		<>
-		<HeaderContainer>
-			<NavBar />
-			<BtnHeader  onClick={() => navigate("/add-video")}>Nuevo Video</BtnHeader>
-		</HeaderContainer>
-	</>
-	);
-};
-
-export default Header;

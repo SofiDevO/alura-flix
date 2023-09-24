@@ -10,6 +10,7 @@ const VideoLista = () => {
   const [videosPorCategoria, setVideosPorCategoria] = useState({});
 
   useEffect(() => {
+    // Realiza una solicitud para obtener la lista de videos desde la API cuando se monta el componente
     buscar("/videos", (videos) => {
       // Organizar los videos por categoría
       const videosCategorizados = videos.reduce((acc, video) => {
@@ -22,10 +23,12 @@ const VideoLista = () => {
         return acc;
       }, {});
 
+      // Establece el estado con los videos organizados por categoría
       setVideosPorCategoria(videosCategorizados);
     });
   }, []);
 
+  // Configuración del carrousel de videos
   const settings = {
     dots: false,
     infinite: true,
@@ -67,20 +70,23 @@ const VideoLista = () => {
         const videos = videosPorCategoria[categoria];
         return (
           <div key={categoria}>
+            {/* Renderiza el título de la categoría con el color de fondo */}
             <CategoriaTitulo color={videos[0].categoria.color}>{categoria}</CategoriaTitulo>
             <Slider {...settings}>
               {videos.map((video) => {
                 const { id, title, img, categoria } = video;
                 return (
+                  // Renderiza un enlace a la página de detalle de video
                   <Link to={`/videos/${id}`} key={id}>
                     <CajaVideo>
-                      <article>
+
+                        {/* Renderiza la imagen del video con un borde del color de la categoría */}
                         <ImagenVideo
                           src={`http://img.youtube.com/vi/${img}/maxresdefault.jpg`}
                           alt={title}
                           style={{ borderColor: categoria.color }}
                         />
-                      </article>
+
                     </CajaVideo>
                   </Link>
                 );
@@ -99,17 +105,17 @@ export default VideoLista;
 const CajaVideo = styled.div`
   max-width: 1280px;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 1rem 0;
   text-align: center;
   :hover {
-    transform: scale(1.1);
+    transform: scale(1.1); // Efecto de escala al pasar el ratón sobre el video
   }
 `;
 const ImagenVideo = styled.img`
-  width: 50rem;
-  border: 3px solid ${(props) => props.borderColor};
+  width: 70%;
+  border: 3px solid ${(props) => props.borderColor}; // Establece el color del borde con base en la categoría
   @media screen and (max-width: 768px) {
-    width: 32rem;
+    width: 100%;
   }
 `;
 const CategoriaTitulo = styled.h3`
@@ -124,5 +130,5 @@ const CategoriaTitulo = styled.h3`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  background-color: ${(props) => props.color};
+  background-color: ${(props) => props.color}; // Establece el color de fondo con base en la categoría
 `;
