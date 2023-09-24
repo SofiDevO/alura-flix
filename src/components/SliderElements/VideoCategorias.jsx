@@ -12,7 +12,7 @@ const VideoCategorias = ({ children }) => {
 
         // Organizar los videos por categoría
         const videosCategorizados = response.reduce((acc, video) => {
-          const categoria = video.categoria.nombre; // Acceder al nombre de la categoría
+          const categoria = video.categorias.nombre; // Acceder al nombre de la categoría
 
           if (!acc[categoria]) {
             acc[categoria] = [];

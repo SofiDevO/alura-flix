@@ -1,4 +1,26 @@
 {
+  "categoria": [
+    {
+      "id": "25",
+      "nombre": "frontend",
+      "color": "#6BD1FF"
+    },
+    {
+      "id": "26",
+      "nombre": "wordpress",
+      "color": "#FFBA05"
+    },
+    {
+      "id": "3256",
+      "nombre": "wsl",
+      "color": "#00C86F"
+    },
+    {
+      "id": "256565",
+      "nombre": "alura",
+      "color": "#7b00e0"
+    }
+  ],
   "videos": [
     {
       "id": 1,
@@ -263,6 +285,39 @@
       },
       "metadescription": "- Requisitos: Ninguno/n/n\n- Dificultad: Fácil/n/n\n- Recomendación: El peor/n/n\n- Ojo con: Estilos en línea son una mala idea 100pre :v.",
       "id": "39121aa7-a7ff-4435-87fe-4176d068ac86"
+    },
+    {
+      "title": "useContext en 20 minutos",
+      "embedId": "Ae33_gdJgnQ",
+      "img": "Ae33_gdJgnQ",
+      "categoria": {
+        "nombre": "frontend",
+        "color": "#6BD1FF"
+      },
+      "metadescription": "Aprende a usar el useContext Hook y cómo gestiona de manera efectiva el estado global de tus aplicaciones en Reactjs.",
+      "id": "ab2ae329-32b6-4f53-81d5-c1b9637dbe6b"
+    },
+    {
+      "title": "Cree un sitio web de Wordpress usando React 🔥 | Wordpress RESTFUL API con React con Frontity",
+      "embedId": "jqHGD31lgGs",
+      "img": "jqHGD31lgGs",
+      "categoria": {
+        "nombre": "wordpress",
+        "color": "#FFBA05"
+      },
+      "metadescription": "WordPress es ese gran CMS que a todos les encanta y tiene toneladas de sitios web en ejecución y miles de complementos que le permiten hacer prácticamente cualquier cosa. \n\nEl único inconveniente que encuentran muchos desarrolladores es que usa plantillas PHP para representar y obtener los datos para su sitio web. \n\nFrontity llega y abre las barreras para permitirle usar WordPress con React donde puede consumir y obtener datos de WordPress a través de la API RESTFUL y renderizarlos en la aplicación React que se ejecuta en un servidor Node.js con todo lo que ama del lado de React.",
+      "id": "a4be9792-852b-4099-8ecf-4eb5361d51f9"
+    },
+    {
+      "title": "Cupid",
+      "embedId": "FyKPsua6Br8",
+      "img": "FyKPsua6Br8",
+      "metadescription": "Yo y los Uwauuu Uwauuu",
+      "categoria": {
+        "nombre": "alura",
+        "color": "#7b00e0"
+      },
+      "id": "eee6556c-c527-4d1c-9755-e91d718c49ba"
     }
   ]
 }

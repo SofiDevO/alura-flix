@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import axios from "axios";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import { v4 as uuidv4 } from "uuid"; // Importa la función v4 de UUID
+import { v4 as uuidv4 } from "uuid";
+import { Btn } from "../components/UI";
+import { obtenerCategorias, agregarVideo } from "../api/api"; // Importa la función obtenerCategorias en lugar de buscar
 
 export default function AddVideo() {
   const {
@@ -11,82 +12,116 @@ export default function AddVideo() {
     formState: { errors },
     reset,
     getValues,
+    setValue,
   } = useForm();
   const navigate = useNavigate();
-  const [color, setColor] = useState("");
-  
+  const [categorias, setCategorias] = useState([]);
+
+  useEffect(() => {
+    const fetchCategorias = async () => {
+      try {
+        const categoriasData = await obtenerCategorias(); // Utiliza la función obtenerCategorias
+        setCategorias(categoriasData);
+      } catch (error) {
+        console.error("Error al obtener las categorías:", error);
+      }
+    };
+
+    fetchCategorias();
+  }, []);
+
   const onSubmit = async (data) => {
     try {
-      const categoria = getValues("categoria.nombre");
-      const categoriaColor = getColorByCategoria(categoria);
-      const videoId = uuidv4(); // Genera un UUID único como ID del video
-      const videoData = {
-        ...data,
-        categoria: { nombre: categoria, color: categoriaColor },
-        id: videoId, // Asigna el UUID como ID del video
-      };
-
-      const response = await axios.post("http://localhost:5555/videos", videoData);
-      console.log("Datos enviados:", response.data);
-      reset();
-      navigate("/");
+      const categoriaId = getValues("categoria");
+      const categoriaSeleccionada = categorias.find(
+        (categoria) => categoria.id === categoriaId
+      );
+  
+      if (categoriaSeleccionada) {
+        const videoId = uuidv4();
+        const videoData = {
+          ...data,
+          categoria: {
+            nombre: categoriaSeleccionada.nombre,
+            color: categoriaSeleccionada.color,
+          },
+          id: videoId,
+        };
+  
+        await agregarVideo(videoData);
+        reset();
+        navigate("/");
+      } else {
+        console.error("Categoría no encontrada");
+      }
     } catch (error) {
       console.error("Error al enviar los datos:", error);
     }
   };
-
-  const handleCategoriaChange = (event) => {
-    const categoria = event.target.value;
-    const categoriaColor = getColorByCategoria(categoria);
-    setColor(categoriaColor);
-  };
-
-  const getColorByCategoria = (categoria) => {
-    switch (categoria) {
-      case "frontend":
-        return "#6BD1FF";
-      case "wordpress":
-        return "#FFBA05";
-      case "wsl":
-        return "#00C86F";
-      case "alura":
-        return "#7b00e0";
-      default:
-        return "";
-    }
-  };
+  
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <input
         type="text"
         placeholder="Titulo"
-        {...register("title", { required: true })}
+        {...register("title", {
+          required: true,
+          message: "Este campo es obligatorio",
+        })}
       />
       <input
         type="text"
         placeholder="el id del url de youtube: FyKPsua6Br8"
-        {...register("embedId", { required: true, maxLength: 11 })}
+        {...register("embedId", {
+          required: true,
+          maxLength: 11,
+          message: "Este campo es obligatorio",
+        })}
       />
+
       <input
         type="text"
         placeholder="el mismo id: FyKPsua6Br8"
-        {...register("img", { required: true, maxLength: 11 })}
+        {...register("img", {
+          required: true,
+          maxLength: 11,
+          message: "Este campo es obligatorio",
+        })}
       />
-      <select
-        {...register("categoria.nombre", { required: true })}
-        onChange={handleCategoriaChange}
-      >
-        <option value="frontend">frontend</option>
-        <option value="wordpress">wordpress</option>
-        <option value="wsl">wsl</option>
-        <option value="alura">alura</option>
-      </select>
+
+      <div className="lista-opciones">
+        <label>Categoria</label>
+        <select
+          value={getValues("categoria")}
+          onChange={(e) => setValue("categoria", e.target.value)}
+        >
+          <option value="" disabled defaultValue="" hidden>
+            Categoria
+          </option>
+          {categorias.map((categoria) => (
+            <option
+              key={categoria.id}
+              value={categoria.id}
+              data-color={categoria.color}
+            >
+              {categoria.nombre}
+            </option>
+          ))}
+        </select>
+      </div>
+
       <textarea
         placeholder="Descripción"
-        {...register("metadescription", { required: true, maxLength: 200 })}
+        {...register("metadescription", {
+          required: true,
+        })}
       />
+      {errors.metadescription && <span>Este campo es requerido</span>}
       <input type="submit" value="Enviar" />
+      <Btn variant="blue" onClick={() => navigate("/add-category")}>
+        Agregar Categoría
+      </Btn>
     </form>
   );
 }

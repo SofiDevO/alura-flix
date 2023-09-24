@@ -5,6 +5,7 @@ import VerVideo from "./pages/VerVideo";
 import AddFormulario from "./pages/AddVideo";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PlayVideo from "./pages/PlayVideo";
+import NewCategory from "./pages/AddCategory";
 
 function App() {
 	return (
@@ -12,9 +13,10 @@ function App() {
 			<Header />
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/add-video" element={<AddFormulario/>} />
 				<Route path="/videos/:id" element={<VerVideo />} />
 				<Route path="/play/:id" element={<PlayVideo/>} />
+				<Route path="/add-video" element={<AddFormulario/>} />
+				<Route path="/add-category" element={<NewCategory/>} />
 				<Route path="*" element={<ErrorPage/>} />
 			</Routes>
 		</Router>
