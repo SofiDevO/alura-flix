@@ -12,3 +12,6 @@ export const colorGrayDark = "#000000f7";
 export const colorGrayMedium = "#151515"
 export const colorGrayLight = "#9e9e9e"
 export const colorGrayLigther = "#f5f5f5 "
+
+
+

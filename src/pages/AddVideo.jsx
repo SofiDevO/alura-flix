@@ -2,130 +2,172 @@ import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
-import { Btn } from "../components/UI";
 import { obtenerCategorias, agregarVideo } from "../api/api"; // Importa la función obtenerCategorias en lugar de buscar
+import {
+	Btn,
+	Form,
+	FormularioTitulo,
+	Container,
+	Input,
+	ContainerInput,
+	CajaInputs,
+} from "../components/UI";
 
 export default function AddVideo() {
-  // Configuración de React Hook Form
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-    getValues,
-    setValue,
-  } = useForm();
-  const navigate = useNavigate();
-  const [categorias, setCategorias] = useState([]);
+	// Configuración de React Hook Form
+	const {
+		register,
+		handleSubmit,
+		formState: { errors },
+		reset,
+		getValues,
+		setValue,
+	} = useForm();
+	const navigate = useNavigate();
+	const [categorias, setCategorias] = useState([]);
 
-  // useEffect para cargar las categorías cuando se monta el componente
-  useEffect(() => {
-    const fetchCategorias = async () => {
-      try {
-        const categoriasData = await obtenerCategorias(); // Utiliza la función obtenerCategorias
-        setCategorias(categoriasData);
-      } catch (error) {
-        console.error("Error al obtener las categorías:", error);
-      }
-    };
+	// useEffect para cargar las categorías cuando se monta el componente
+	useEffect(() => {
+		const fetchCategorias = async () => {
+			try {
+				const categoriasData = await obtenerCategorias(); // Utiliza la función obtenerCategorias
+				setCategorias(categoriasData);
+			} catch (error) {
+				console.error("Error al obtener las categorías:", error);
+			}
+		};
 
-    fetchCategorias();
-  }, []);
+		fetchCategorias();
+	}, []);
 
-  // Función que se ejecuta cuando se envía el formulario
-  const onSubmit = async (data) => {
-    try {
-      const categoriaId = getValues("categoria");
-      const categoriaSeleccionada = categorias.find(
-        (categoria) => categoria.id === categoriaId
-      );
-  
-      if (categoriaSeleccionada) {
-        const videoId = uuidv4();
-        const videoData = {
-          ...data,
-          categoria: {
-            nombre: categoriaSeleccionada.nombre,
-            color: categoriaSeleccionada.color,
-          },
-          id: videoId,
-        };
-  
-        await agregarVideo(videoData);
-        reset(); // Limpia el formulario después de enviar
-        navigate("/"); // Navega de regreso a la página principal
-      } else {
-        console.error("Categoría no encontrada");
-      }
-    } catch (error) {
-      console.error("Error al enviar los datos:", error);
-    }
-  };
-  
+	// Función que se ejecuta cuando se envía el formulario
+	const onSubmit = async (data) => {
+		try {
+			const categoriaId = getValues("categoria");
+			const categoriaSeleccionada = categorias.find(
+				(categoria) => categoria.id === categoriaId
+			);
 
-  return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      {/* Campos del formulario */}
-      <input
-        type="text"
-        placeholder="Titulo"
-        {...register("title", {
-          required: true,
-          message: "Este campo es obligatorio",
-        })}
-      />
-      <input
-        type="text"
-        placeholder="el id del url de youtube: FyKPsua6Br8"
-        {...register("embedId", {
-          required: true,
-          maxLength: 11,
-          message: "Este campo es obligatorio",
-        })}
-      />
+			if (categoriaSeleccionada) {
+				const videoId = uuidv4();
+				const videoData = {
+					...data,
+					categoria: {
+						nombre: categoriaSeleccionada.nombre,
+						color: categoriaSeleccionada.color,
+					},
+					id: videoId,
+				};
 
-      <input
-        type="text"
-        placeholder="el mismo id: FyKPsua6Br8"
-        {...register("img", {
-          required: true,
-          maxLength: 11,
-          message: "Este campo es obligatorio",
-        })}
-      />
+				await agregarVideo(videoData);
+				reset(); // Limpia el formulario después de enviar
+				navigate("/"); // Navega de regreso a la página principal
+			} else {
+				console.error("Categoría no encontrada");
+			}
+		} catch (error) {
+			console.error("Error al enviar los datos:", error);
+		}
+	};
 
-      <div className="lista-opciones">
-        <label>Categoria</label>
-        <select
-          value={getValues("categoria")}
-          onChange={(e) => setValue("categoria", e.target.value)}
-        >
-          <option value="" disabled defaultValue="" hidden>
-            Categoria
-          </option>
-          {categorias.map((categoria) => (
-            <option
-              key={categoria.id}
-              value={categoria.id}
-              data-color={categoria.color}
-            >
-              {categoria.nombre}
-            </option>
-          ))}
-        </select>
-      </div>
+	return (
+		<Container>
+			<FormularioTitulo>Nuevo Video</FormularioTitulo>
+			<Form onSubmit={handleSubmit(onSubmit)}>
+				{/* Campos del formulario */}
 
-      <textarea
-        placeholder="Descripción"
-        {...register("metadescription", {
-          required: true,
-        })}
-      />
-      {errors.metadescription && <span>Este campo es requerido</span>}
-      <input type="submit" value="Enviar" />
-      <Btn variant="blue" onClick={() => navigate("/add-category")}>
-        Agregar Categoría
-      </Btn>
-    </form>
-  );
+				<CajaInputs>
+					<ContainerInput>
+          <label>Titulo</label>
+						<Input
+							type="text"
+							placeholder="Agregue el Titulo del video"
+							{...register("title", {
+								required: true,
+								message: "Este campo es obligatorio",
+							})}
+						/>
+					</ContainerInput>
+					{errors.title && <span>Este campo es requerido</span>}
+				</CajaInputs>
+
+				<CajaInputs>
+					<ContainerInput>
+          <label>Embed ID del video</label>
+						<Input
+							type="text"
+							placeholder="el id del url de youtube: FyKPsua6Br8"
+							{...register("embedId", {
+								required: true,
+								maxLength: 11,
+								message: "Este campo es obligatorio",
+							})}
+						/>
+					</ContainerInput>
+					{errors.embedId && <span>Este campo es requerido</span>}
+				</CajaInputs>
+
+				<CajaInputs>
+					<ContainerInput>
+          <label>Embed ID para imagen</label>
+						<Input
+							type="text"
+							placeholder="el mismo id: FyKPsua6Br8"
+							{...register("img", {
+								required: true,
+								maxLength: 11,
+							})}
+						/>
+					</ContainerInput>
+					{errors.img && <span>Este campo es requerido</span>}
+				</CajaInputs>
+
+				<CajaInputs>
+					<ContainerInput>
+						<label>Escoja una categoría</label>
+						<select
+							value={getValues("categoria")}
+							onChange={(e) => setValue("categoria", e.target.value)}
+							{...register("select", {
+								required: true,
+							})}>
+							<option value="" defaultValue="" hidden>
+								Elegir
+							</option>
+							{categorias.map((categoria) => (
+								<option
+									key={categoria.id}
+									value={categoria.id}
+									data-color={categoria.color}>
+									{categoria.nombre}
+								</option>
+							))}
+						</select>
+					</ContainerInput>
+					{errors.select && <span>Este campo es requerido</span>}
+				</CajaInputs>
+
+
+				<CajaInputs>
+					<ContainerInput>
+          <label>Descripción</label>
+						<textarea
+							placeholder="Agregue la descripción del video"
+							{...register("metadescription", {
+								required: true,
+							})}
+						/>
+					</ContainerInput>
+					{errors.metadescription && <span>Este campo es requerido</span>}
+				</CajaInputs>
+
+				<div>
+					<input type="submit" value="Enviar" />
+					<Btn variant="blue" onClick={() => navigate("/add-category")}>
+						Agregar Categoría
+					</Btn>
+				</div>
+			</Form>
+		</Container>
+	);
 }

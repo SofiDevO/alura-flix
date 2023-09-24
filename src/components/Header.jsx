@@ -31,7 +31,7 @@ const HeaderContainer = styled.header`
 		align-items: center;
 		padding: 0 3.9rem;
 		border: 1px solid #000;
-		background: ${colorGrayMedium};
+		background: ${colorGrayDark};
 		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 		@media screen and (max-width:768px){
 			justify-content: center;
