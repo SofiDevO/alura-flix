@@ -31,7 +31,7 @@ const HeroContainer = styled.div`
 	justify-content: space-around;
 	flex-wrap: wrap;
 	width: 100%;
-	height: 83.2rem;
+	height: 100rem;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom;

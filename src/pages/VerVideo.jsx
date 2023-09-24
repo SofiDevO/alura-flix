@@ -41,7 +41,7 @@ const Section = styled.section`
 	`
 
 const VerVideoContainer = styled.div`
-	height: 80vh;
+	height: 112vh;
     display: flex;
     padding: 2rem;
     justify-content: center;
