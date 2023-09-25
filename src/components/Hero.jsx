@@ -2,6 +2,7 @@ import styled from "styled-components";
 import TextContainer from "./TextContainer";
 import { Link } from "react-router-dom";
 import portada from "../assets/img/portadaVideoYT.jpg"
+import heroImg from "../assets/img/JAVASCRIPT.png"
 import { useNavigate } from "react-router-dom";
 import { Btn } from "./UI";
 
@@ -40,7 +41,7 @@ const HeroContainer = styled.div`
 			rgba(1, 8, 22, 0.811) 59%,
 			rgba(0, 5, 13, 0.849) 95%
 		),
-		url("/src/assets/img/JAVASCRIPT.png");
+		url(${heroImg});
 	YoutubeEmbed {
 	}
 	@media screen and (max-width: 768px) {
