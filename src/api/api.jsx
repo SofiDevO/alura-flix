@@ -18,7 +18,7 @@ export const buscar = async (url, setData) => {
     
     console.error("Error al obtener los datos:", error);
     // Lanza el error para que pueda ser manejado en el lugar donde se llama a esta función
-    throw error;
+    
   }
 };
 
@@ -34,7 +34,7 @@ export const obtenerCategorias = async () => {
   } catch (error) {
     console.error("Error al obtener las categorías:", error);
     // Lanza el error para que pueda ser manejado en el lugar donde se llama a esta función
-    throw error;
+    
   }
 };
 
@@ -53,7 +53,7 @@ export const agregarCategoria = async (data) => {
     console.error("Error al agregar la categoría:", error);
     
     // Lanza el error para que pueda ser manejado en el lugar donde se llama a esta función
-    throw error;
+    
   }
 };
 
@@ -72,7 +72,7 @@ export const editarCategoria = async (id, data) => {
     console.error("Error al editar la categoría:", error);
     location.reload()
     // Lanza el error para que pueda ser manejado en el lugar donde se llama a esta función
-    throw error;
+    
   }
 };
 
@@ -91,7 +91,7 @@ export const eliminarCategoria = async (id) => {
     
     console.error("Error al eliminar la categoría:", error);
     // Lanza el error para que pueda ser manejado en el lugar donde se llama a esta función
-    throw error;
+    
   }
 };
 
@@ -107,9 +107,8 @@ export const agregarVideo = async (data) => {
     // Devuelve los datos de respuesta de la API
     return response.data;
   } catch (error) {
-    
     console.error("Error al enviar los datos:", error);
     // Lanza el error para que pueda ser manejado en el lugar donde se llama a esta función
-    throw error;
+    
   }
 };
