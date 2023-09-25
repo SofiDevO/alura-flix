@@ -44,6 +44,7 @@ const HeroContainer = styled.div`
 		url(${heroImg});
 	YoutubeEmbed {
 	}
+	
 	@media screen and (max-width: 768px) {
 		height: 31.8072rem;
 		align-content: flex-end;
