@@ -26,13 +26,13 @@ export const Btn = styled.button`
 /* Elementos del formulario */
 
 export const Container = styled.div`
-	height: 59vh;
-
-	color: #f5f5f5;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	font-size: 1.8rem;
+	    height: 141vh;
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.8rem;
+    align-items: center;
 `;
 
 export const FormularioTitulo = styled.h2`
@@ -47,11 +47,15 @@ export const FormularioTitulo = styled.h2`
 
 export const ElementosFormulario = styled.div`
 	display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 86%;
-    gap: 8rem;
-    justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	width: 86%;
+	gap: 8rem;
+	justify-content: space-between;
+
+	@media screen and (max-width: 768px) {
+		gap: 2rem;
+	}
 `;
 export const TextoLabel = styled.label`
 	display: flex;
@@ -68,12 +72,10 @@ export const TextoLabel = styled.label`
 
 export const Form = styled.form`
 	display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 20rem;
-    gap: 4rem;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
 `;
 export const CajaInputs = styled.div`
 	display: flex;
@@ -98,18 +100,18 @@ export const Select = styled.select`
 	text-align: center;
 	z-index: 20;
 	font-size: 1.9rem;
-	color: ${colorGrayLigther};
+	color: white;
 	padding: 1rem;
 	outline: none;
 	border: none;
-	background: ${colorGrayLight};
+	background: #3e3e3e;
 	font-weight: 800;
 	padding: 1rem 5rem;
 `;
 
 export const TextAreaWrapper = styled.textarea`
 	width: 100%;
-	height: 130px;
+	height: 120px;
 	border: none;
 	padding: 8px;
 	font-size: 16px;
@@ -117,10 +119,10 @@ export const TextAreaWrapper = styled.textarea`
 	resize: none;
 	background-color: ${colorGrayLight};
 	color: ${colorGrayLigther};
-	font-size: 2rem;
+	font-size: 1%.6;
 
-	@media screen and (max-width:768px){
-	font-size:1.4rem;
+	@media screen and (max-width: 768px) {
+		font-size: 1.4rem;
 	}
 `;
 
@@ -128,24 +130,23 @@ export const BarraError = styled.span`
 	border-bottom: 3px solid;
 	border-color: ${(props) => (props.variant === "red" ? "#ff6347" : "#2A7AE4")};
 	width: 100%;
-	`;
+`;
 
-	export const SpanMensaje = styled.span`
-		color: ${(props) => (props.variant === "red" ? "#ff6347" : "#2A7AE4")};
-		@media screen and (max-width:768px) {
-		font-size: 1.3rem	
+export const SpanMensaje = styled.span`
+	color: ${(props) => (props.variant === "red" ? "#ff6347" : "#2A7AE4")};
+	@media screen and (max-width: 768px) {
+		font-size: 1.3rem;
 	}
-	`
-	
+`;
 
 export const CajaBotones = styled.div`
-	    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-top: 10rem;
-    padding: 0;
-    justify-content: center;
-	@media screen and (max-width:678px) {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-top: 10rem;
+	padding: 0;
+	justify-content: center;
+	@media screen and (max-width: 678px) {
 		margin-top: 2rem;
 	}
 `;
@@ -158,17 +159,18 @@ export const ContenedorBotones = styled.div`
 	@media screen and (max-width: 768px) {
 		flex-direction: column;
 		align-items: center;
+		gap: 2rem;
 	}
 `;
 
 export const EviarLimpiar = styled.div`
 	display: flex;
-    align-items: center;
-    margin-top: 10rem;
-    padding: 0;
-    width: 30%;
-    justify-content: space-between;
-    flex-wrap: wrap;
+	align-items: center;
+	margin-top: 10rem;
+	padding: 0;
+	width: 30%;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	@media screen and (max-width: 768px) {
 		align-items: center;
 		display: flex;

@@ -53,6 +53,42 @@ export const agregarCategoria = async (data) => {
   }
 };
 
+// Función para editar una categoría en la API
+export const editarCategoria = async (id, data) => {
+  try {
+    // Realiza una solicitud PUT a la ruta '/categoria/{id}' con los datos proporcionados
+    const response = await api.put(`/categoria/${id}`, data);
+
+    // Registra en la consola los datos enviados como respuesta
+    console.log("Categoría editada:", response.data);
+
+    // Devuelve los datos de respuesta de la API
+    return response.data;
+  } catch (error) {
+    console.error("Error al editar la categoría:", error);
+    // Lanza el error para que pueda ser manejado en el lugar donde se llama a esta función
+    throw error;
+  }
+};
+
+// Función para eliminar una categoría de la API
+export const eliminarCategoria = async (id) => {
+  try {
+    // Realiza una solicitud DELETE a la ruta '/categoria/{id}' para eliminar la categoría
+    const response = await api.delete(`/categoria/${id}`);
+
+    // Registra en la consola los datos enviados como respuesta
+    console.log("Categoría eliminada:", response.data);
+
+    // Devuelve los datos de respuesta de la API
+    return response.data;
+  } catch (error) {
+    console.error("Error al eliminar la categoría:", error);
+    // Lanza el error para que pueda ser manejado en el lugar donde se llama a esta función
+    throw error;
+  }
+};
+
 // Función para agregar un video a la API
 export const agregarVideo = async (data) => {
   try {

@@ -7,6 +7,14 @@ html {
 .slick-slider,
 .slick-track {
 	padding: 3rem 0;
+	
+}
+
+.slick-slider, .slick-slider .slick-track{
+	
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    
 }
 
 .slick-prev,

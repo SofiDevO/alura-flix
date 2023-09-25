@@ -23,6 +23,12 @@
       "nombre": "alura",
       "color": "#7b00e0",
       "descripcion": "Esta es una descripcion de la categoria"
+    },
+    {
+      "descripcion": "Videos de React",
+      "nombre": "React",
+      "color": "#00ffd5",
+      "id": "59804be1-bb35-426b-8db8-42fe3a2b52dc"
     }
   ],
   "videos": [
@@ -284,8 +290,8 @@
       "embedId": "J-hGXVPyT-Y",
       "img": "J-hGXVPyT-Y",
       "categoria": {
-        "nombre": "frontend",
-        "color": "#6BD1FF"
+        "nombre": "react",
+        "color": "#14fbff"
       },
       "metadescription": "- Requisitos: Ninguno/n/n\n- Dificultad: Fácil/n/n\n- Recomendación: El peor/n/n\n- Ojo con: Estilos en línea son una mala idea 100pre :v.",
       "id": "39121aa7-a7ff-4435-87fe-4176d068ac86"
@@ -295,8 +301,8 @@
       "embedId": "Ae33_gdJgnQ",
       "img": "Ae33_gdJgnQ",
       "categoria": {
-        "nombre": "frontend",
-        "color": "#6BD1FF"
+        "nombre": "react",
+        "color": "#14fbff"
       },
       "metadescription": "Aprende a usar el useContext Hook y cómo gestiona de manera efectiva el estado global de tus aplicaciones en Reactjs.",
       "id": "ab2ae329-32b6-4f53-81d5-c1b9637dbe6b"
@@ -324,15 +330,15 @@
       "id": "eee6556c-c527-4d1c-9755-e91d718c49ba"
     },
     {
+      "metadescription": "En este proyecto aprenderás a crear una aplicación web Frontend usando Rect, que te permitirá registrar tus gastos e ingresos, y podrás usarlo para poder obtener una especie de resumen de cuanto es lo que obtienes de balance, ademas de un grafico con mas información. \\n\\nAqui Vitejs para crear el proyecto, usaremos la API Context de React, LocalStorage y también algunos modulos utiles para poder practicar mas con esta biblioteca para crear interfaces web de usuario.",
+      "title": "React Aplicación para administrar gastos e ingresos",
+      "embedId": "zN6xXtHww54",
+      "img": "zN6xXtHww54",
       "categoria": {
-        "nombre": "frontend",
-        "color": "#6BD1FF"
+        "nombre": "react",
+        "color": "#14fbff"
       },
-      "title": "zaDAS",
-      "embedId": "FyKPsua6Br8",
-      "img": "FyKPsua6Br8",
-      "metadescription": "hgbdf",
-      "id": "8d5cbb3f-0bbf-48fc-8edd-3f181fe099f4"
+      "id": "55fb53e0-3444-476d-827f-60a6280650f1"
     }
   ]
 }

@@ -35,8 +35,8 @@ const Input = styled.input`
   flex-shrink: 0;
   background-color: ${colorGrayLight};
   display: flex;
-  height: 32px;
-  padding: 1rem;
+  height: 35px;
+  padding: .5rem;
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;

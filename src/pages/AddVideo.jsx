@@ -196,7 +196,7 @@ export default function AddVideo() {
 
 				<ContenedorBotones>
 					<EviarLimpiar>
-						<InputSubmit type="submit" value="Nuevo Video" />
+						<InputSubmit type="submit" value="Guardar" />
 						<Btn onClick={() => reset()}>Limpiar</Btn>
 					</EviarLimpiar>
 

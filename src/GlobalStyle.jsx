@@ -11,7 +11,11 @@ const GlobalStyle = createGlobalStyle`
         transition: all .5s ease;
     }
     body{
-        background-color: black;
+        background-color: #151515;
+    }
+    a{
+        text-decoration: none;
+        color: white;
     }
         
         
