@@ -51,7 +51,7 @@ export const agregarCategoria = async (data) => {
     return response.data;
   } catch (error) {
     console.error("Error al agregar la categoría:", error);
-    location.reload();
+    
     // Lanza el error para que pueda ser manejado en el lugar donde se llama a esta función
     throw error;
   }
@@ -88,7 +88,7 @@ export const eliminarCategoria = async (id) => {
     // Devuelve los datos de respuesta de la API
     return response.data;
   } catch (error) {
-    location.reload();
+    
     console.error("Error al eliminar la categoría:", error);
     // Lanza el error para que pueda ser manejado en el lugar donde se llama a esta función
     throw error;
@@ -107,7 +107,7 @@ export const agregarVideo = async (data) => {
     // Devuelve los datos de respuesta de la API
     return response.data;
   } catch (error) {
-    location.reload();
+    
     console.error("Error al enviar los datos:", error);
     // Lanza el error para que pueda ser manejado en el lugar donde se llama a esta función
     throw error;
