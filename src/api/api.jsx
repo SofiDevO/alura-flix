@@ -70,7 +70,7 @@ export const editarCategoria = async (id, data) => {
     return response.data;
   } catch (error) {
     console.error("Error al editar la categoría:", error);
-    location.reload()
+    
     // Lanza el error para que pueda ser manejado en el lugar donde se llama a esta función
     
   }
