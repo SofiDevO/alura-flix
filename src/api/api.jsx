@@ -3,6 +3,7 @@ import axios from "axios";
 // Crea una instancia de axios con la base de la API
 export const api = axios.create({
   baseURL: "http://localhost:5555/",
+  /* http://localhost:5555/ */
 });
 
 // Función para realizar una búsqueda en la API

@@ -1,10 +1,10 @@
 {
   "categoria": [
     {
-      "id": "25",
+      "descripcion": "Videos de la categoría frontend 💙",
       "nombre": "frontend",
       "color": "#6BD1FF",
-      "descripcion": "Esta es una descripcion de la categoria"
+      "id": "25"
     },
     {
       "id": "26",
@@ -279,8 +279,8 @@
       "embedId": "FyKPsua6Br8",
       "img": "FyKPsua6Br8",
       "categoria": {
-        "nombre": "frontend",
-        "color": "#6BD1FF"
+        "nombre": "React",
+        "color": "#00ffd5"
       },
       "metadescription": "10 hrs de cupid para programar mientras Jhon Ceena baila",
       "id": 122127
@@ -290,8 +290,8 @@
       "embedId": "J-hGXVPyT-Y",
       "img": "J-hGXVPyT-Y",
       "categoria": {
-        "nombre": "react",
-        "color": "#14fbff"
+        "nombre": "React",
+        "color": "#00ffd5"
       },
       "metadescription": "- Requisitos: Ninguno/n/n\n- Dificultad: Fácil/n/n\n- Recomendación: El peor/n/n\n- Ojo con: Estilos en línea son una mala idea 100pre :v.",
       "id": "39121aa7-a7ff-4435-87fe-4176d068ac86"
@@ -301,8 +301,8 @@
       "embedId": "Ae33_gdJgnQ",
       "img": "Ae33_gdJgnQ",
       "categoria": {
-        "nombre": "react",
-        "color": "#14fbff"
+        "nombre": "React",
+        "color": "#00ffd5"
       },
       "metadescription": "Aprende a usar el useContext Hook y cómo gestiona de manera efectiva el estado global de tus aplicaciones en Reactjs.",
       "id": "ab2ae329-32b6-4f53-81d5-c1b9637dbe6b"
@@ -335,10 +335,65 @@
       "embedId": "zN6xXtHww54",
       "img": "zN6xXtHww54",
       "categoria": {
-        "nombre": "react",
-        "color": "#14fbff"
+        "nombre": "React",
+        "color": "#00ffd5"
       },
       "id": "55fb53e0-3444-476d-827f-60a6280650f1"
+    },
+    {
+      "metadescription": "React.js es una librería para crear interfaces web, con ella están construidas las dos redes sociales más grandes: Facebook e Instagram. En este video aprenderás las bases de esta librería.",
+      "title": "¿Qué es React.js y cómo funciona? - La mejor explicación en español",
+      "embedId": "lWQ69WX7-hA",
+      "img": "lWQ69WX7-hA",
+      "categoria": {
+        "nombre": "React",
+        "color": "#00ffd5"
+      },
+      "id": "98751bdc-d3e6-454e-b511-b22d14aa989f"
+    },
+    {
+      "metadescription": "Holi",
+      "title": "¿Qué es React.js y cómo funciona? - La mejor explicación en español",
+      "embedId": "FyKPsua6Br8",
+      "img": "FyKPsua6Br8",
+      "categoria": {
+        "nombre": "React",
+        "color": "#00ffd5"
+      },
+      "id": "30e6f1bb-150b-497d-9546-509551336466"
+    },
+    {
+      "metadescription": "Xd❤️❤️❤️❤️❤️",
+      "title": "¿Qué es React.js y cómo funciona? - La mejor explicación en español",
+      "embedId": "FyKPsua6Br8",
+      "img": "FyKPsua6Br8",
+      "categoria": {
+        "nombre": "React",
+        "color": "#00ffd5"
+      },
+      "id": "7dc12fed-fdc2-41f5-889e-753821f4f44e"
+    },
+    {
+      "metadescription": "sadsadASA",
+      "title": "¿Qué es React.js y cómo funciona? - La mejor explicación en español",
+      "embedId": "J-hGXVPyT-Y",
+      "img": "J-hGXVPyT-Y",
+      "categoria": {
+        "nombre": "React",
+        "color": "#00ffd5"
+      },
+      "id": "6b6ed56d-2864-4d7c-aebb-db92024bb799"
+    },
+    {
+      "metadescription": "Practica React con estos 5 proyectos completos donde vamos a construir aplicaciones o componentes usando hooks. \n\nEstos proyectos están hechos para que mejores tus habilidades con Javascript y repases conceptos importantes de React. #proyectos #reactjs #javascript #cursosgratis",
+      "title": "🔥 5 proyectos COMPLETOS en REACT JS",
+      "embedId": "oT-feDPuJmk",
+      "img": "oT-feDPuJmk",
+      "categoria": {
+        "nombre": "React",
+        "color": "#00ffd5"
+      },
+      "id": "a4ba537f-189f-429c-8b48-89dcde4165d1"
     }
   ]
 }
