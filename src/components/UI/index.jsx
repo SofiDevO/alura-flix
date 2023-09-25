@@ -26,7 +26,7 @@ export const Btn = styled.button`
 /* Elementos del formulario */
 
 export const Container = styled.div`
-	    height: 141vh;
+	    height: 138vh;
     color: #f5f5f5;
     display: flex;
     flex-direction: column;
