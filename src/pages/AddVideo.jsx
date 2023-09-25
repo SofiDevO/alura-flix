@@ -89,6 +89,7 @@ export default function AddVideo() {
 					<CajaInputs>
 						<ContainerInput>
 							<CustomTextInput
+              type="text"
 								label="Título"
 								name="title"
 								placeholder="Agregue el Título del video"
@@ -107,6 +108,7 @@ export default function AddVideo() {
 					<CajaInputs>
 						<ContainerInput>
 							<CustomTextInput
+              type="text"
 								label="Embed ID del video"
 								name="embedId"
 								placeholder="el id del url de youtube: FyKPsua6Br8"
@@ -125,6 +127,7 @@ export default function AddVideo() {
 					<CajaInputs>
 						<ContainerInput>
 							<CustomTextInput
+              type="text"
 								label="Embed ID para imagen"
 								name="img"
 								placeholder="el mismo id: FyKPsua6Br8"

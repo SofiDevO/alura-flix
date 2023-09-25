@@ -3,14 +3,12 @@ import styled from "styled-components";
 import { colorGrayLight, colorGrayLigther } from "../UI/variables";
 import { TextoLabel } from "../UI";
 
-
-
-function CustomTextInput({ label, name, placeholder, register, error }) {
+function CustomTextInput({ type, label, name, placeholder, register, error }) {
   return (
     <>
       <TextoLabel>{label}</TextoLabel>
       <Input
-        type="text"
+        type={type}
         placeholder={placeholder}
         {...register(name, {
           required: "Este campo es obligatorio",

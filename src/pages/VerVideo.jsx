@@ -24,7 +24,7 @@ const VerVideo = ({ url }) => {
 				<InfoContainer>
 					<h1>{vid.title}</h1>
 					<Descripcion>{vid.metadescription}</Descripcion>
-					<Btn onClick={() => navigate(`/play/${id}`)}>Ver video</Btn>
+					<Btn onClick={() => navigate(`/play/${id}`)}>Play</Btn>
 				</InfoContainer>
 			</VerVideoContainer>
 			<Footer/>

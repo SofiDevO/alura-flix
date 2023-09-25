@@ -3,22 +3,26 @@
     {
       "id": "25",
       "nombre": "frontend",
-      "color": "#6BD1FF"
+      "color": "#6BD1FF",
+      "descripcion": "Esta es una descripcion de la categoria"
     },
     {
       "id": "26",
       "nombre": "wordpress",
-      "color": "#FFBA05"
+      "color": "#FFBA05",
+      "descripcion": "Esta es una descripcion de la categoria"
     },
     {
       "id": "3256",
       "nombre": "wsl",
-      "color": "#00C86F"
+      "color": "#00C86F",
+      "descripcion": "Esta es una descripcion de la categoria"
     },
     {
       "id": "256565",
       "nombre": "alura",
-      "color": "#7b00e0"
+      "color": "#7b00e0",
+      "descripcion": "Esta es una descripcion de la categoria"
     }
   ],
   "videos": [

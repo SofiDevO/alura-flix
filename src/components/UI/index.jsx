@@ -48,10 +48,10 @@ export const FormularioTitulo = styled.h2`
 export const ElementosFormulario = styled.div`
 	display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    gap: 4rem;
+    width: 86%;
+    gap: 8rem;
+    justify-content: space-between;
 `;
 export const TextoLabel = styled.label`
 	display: flex;
@@ -68,18 +68,17 @@ export const TextoLabel = styled.label`
 
 export const Form = styled.form`
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	/* gap: 5rem; */
-	height: 20rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+    gap: 4rem;
 `;
 export const CajaInputs = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 80%;
-	height: 107px;
 	flex-shrink: 0;
 `;
 export const ContainerInput = styled.div`
@@ -117,6 +116,12 @@ export const TextAreaWrapper = styled.textarea`
 	outline: none;
 	resize: none;
 	background-color: ${colorGrayLight};
+	color: ${colorGrayLigther};
+	font-size: 2rem;
+
+	@media screen and (max-width:768px){
+	font-size:1.4rem;
+	}
 `;
 
 export const BarraError = styled.span`
@@ -140,11 +145,14 @@ export const CajaBotones = styled.div`
     margin-top: 10rem;
     padding: 0;
     justify-content: center;
+	@media screen and (max-width:678px) {
+		margin-top: 2rem;
+	}
 `;
 export const ContenedorBotones = styled.div`
 	display: flex;
 	justify-content: space-between;
-	width: 81%;
+	width: 69%;
 	align-items: flex-end;
 	padding: 0 0 5rem;
 	@media screen and (max-width: 768px) {
