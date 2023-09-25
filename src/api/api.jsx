@@ -22,6 +22,7 @@ export const buscar = async (url, setData) => {
   }
 };
 
+
 // Función para obtener categorías desde la API
 export const obtenerCategorias = async () => {
   try {
