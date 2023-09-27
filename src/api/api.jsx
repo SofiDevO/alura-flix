@@ -2,8 +2,8 @@ import axios from "axios";
 
 // Crea una instancia de axios con la base de la API
 export const api = axios.create({
-  baseURL: "http://localhost:5555/",
-  /* usa este url pra hacer pruebas CRUD http://localhost:5555/    
+  baseURL: "https://fake-api-aluraflix-two.vercel.app",
+  /* usa este url pra hacer pruebas CRUD http://localhost:5555/  ,  
   https://fake-api-aluraflix-two.vercel.app/
   */
 });
