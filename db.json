@@ -7,10 +7,10 @@
       "id": "25"
     },
     {
-      "id": "26",
+      "descripcion": "esta es la categoría de WordPress 🦉",
       "nombre": "wordpress",
       "color": "#FFBA05",
-      "descripcion": "Esta es una descripcion de la categoria"
+      "id": "26"
     },
     {
       "id": "3256",
@@ -25,15 +25,21 @@
       "descripcion": "Esta es una descripcion de la categoria"
     },
     {
-      "descripcion": "Videos de React",
+      "descripcion": "Videos de React 🐣",
       "nombre": "React",
       "color": "#00ffd5",
       "id": "59804be1-bb35-426b-8db8-42fe3a2b52dc"
+    },
+    {
+      "descripcion": "Categoria para os videos de css",
+      "nombre": "CSS",
+      "color": "#ff0000",
+      "id": "be3535fe-da7a-4f44-ba25-1bdacf2bb0d9"
     }
   ],
   "videos": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Tutorial Modo oscuro",
       "metadescription": "¿Sabes qué es el 'prefers-color-scheme'? Aprende cómo implementar el Modo oscuro en tus sitios web con JavaScript. Este es un curso de nivel medio.",
       "categoria": {
@@ -44,7 +50,7 @@
       "embedId": "tSVyfcpJ1yc"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Taller de Diseño con FIGMA para DEVELOPERS | HackerLIVE#40",
       "metadescription": "¿Cómo aprender diseño como programadores? \n\nCarmen Ansio, como experta, nos ayuda a conseguirlo con este taller desde cero para aprender Figma, una de las herramientas más utilizadas en el sector.",
       "categoria": {
@@ -55,7 +61,7 @@
       "embedId": "jy0IgvV42es"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "PHP está muerto en 2023? | #laFunción 9x2",
       "metadescription": "Parece que cada año se intenta matar a PHP \n\n ¿pero es eso cierto? En el directo de hoy exploramos a ver si tiene sentido o no aprender php como lenguaje de programación y veremos sus principales frameworks como Laravel y Symfony.",
       "categoria": {
@@ -66,7 +72,7 @@
       "embedId": "f8W220hkmgA"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Fake API con json-server",
       "metadescription": "Aprende a desplegar tu propia fake api con vercel y json server para tus proyectos de frontend. \n\nAdemás, te dejo el repositorio para que lo puedas clonar",
       "categoria": {
@@ -77,7 +83,7 @@
       "embedId": "bZ6oqJEA5K0"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "¿Cómo hacer deploy de Github a Hostinger?",
       "metadescription": "Aprende a desplegar tu repositorio privado desde Github a Hostinger. \n\n Podrás hacer cambios y actualizarlos en tiempo real con tan solo un PUSH ❤️",
       "categoria": {
@@ -88,7 +94,7 @@
       "embedId": "RwBcNPybF4Q"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Curso de wordpress 1",
       "metadescription": "primeros pasos con Local Wordpress.\n\n Aprenderás a instalar Wordpress de forma local y hacer tus primeras configuraciones.",
       "categoria": {
@@ -99,7 +105,7 @@
       "embedId": "XqL6bDsQxbM"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Curso de wordpress 2",
       "metadescription": "Haremos las primeras configuraciones a nuestro wordpress para que pueda indexarse y posicionarse de manera optimizada. \n\nEstructuraremos el menú y las las permalinks",
       "categoria": {
@@ -110,7 +116,7 @@
       "embedId": "1gUCu2e_JiM"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Curso de wordpress 3",
       "metadescription": "Editor de texto Gutenberg",
       "categoria": {
@@ -121,7 +127,7 @@
       "embedId": "oqqTEeD8F0c"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Curso de wordpress 4",
       "metadescription": "Bienvenidos al curso de Wordpress con ELEMNTOR. En este curso aprenderás a crear páginas web, totalmente atractivas y responsivas.\n\nLo mejor de todo es que  es totalmente gratis, ya que trabajaremos ofline usando el software de LOCAL. Así que lo único que necesitas es una PC y conexión a internet (Para ver estos videos 😜)",
       "categoria": {
@@ -132,7 +138,7 @@
       "embedId": "eeoa0f4IVhs"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Curso de wordpress 5",
       "metadescription": "Theme Builder de Elementor\n \n En esta clase vamos a crear nuestra primera página con Elementor. \n \n Aprenderás como maquetar y obtener un diseño responsive con los Bloques de elementor",
       "categoria": {
@@ -143,7 +149,7 @@
       "embedId": "BxKuJ4pLRSI"
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Curso de WSL 01",
       "metadescription": "Con este curso aprenderás a preparar tu equipo con las herramientas necesarias para empezar a programar o comenzar a aprender.\n \n  Vamos a hacer las configuraciones necesarias para que puedas crear un proyecto sin mayores obstáculos. \n \nTambién aprenderás a moverte en la terminal. este es un curso para principiantes 🐣",
       "categoria": {
@@ -154,7 +160,7 @@
       "embedId": "JKThdA1UbTw"
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "Curso de WSL 02",
       "metadescription": "Ya que instalamos la terminal, vamos a sumergirnos de lleno en la Command Line o  Línea de comandos. \n\nAprenderemos como mover archivos, crearlos y editarlos",
       "categoria": {
@@ -165,7 +171,7 @@
       "embedId": "aFvk5UepU0o"
     },
     {
-      "id": 13,
+      "id": "13",
       "title": "Curso de WSL 03",
       "metadescription": "En esta clase vamos a aprender a instalar Plugins y Temas para nuestra terminal.\n\n Así que la dejaremos super bonita pero también aumentaremos nuestra productividad.",
       "categoria": {
@@ -176,7 +182,7 @@
       "embedId": "jA2PIgWX3BI"
     },
     {
-      "id": 14,
+      "id": "14",
       "title": "Instalar Ubuntu en Windows 10 con WSL",
       "metadescription": "¿Necesitas tener un entorno #linux en #Windows sin una máquina virtual o dual boot? #WSL viene al rescate.\n\nEn este vídeo veremos cómo instalar Ubuntu con WSL en Windows 10, además, veremos algunos comandos útiles que seguro te ayudan en caso de tener problemas durante la instalación de WSL en tu máquina",
       "categoria": {
@@ -187,7 +193,7 @@
       "embedId": "L4f1XHrSJEg"
     },
     {
-      "id": 15,
+      "id": "15",
       "title": "WSL2 - Windows corriendo contenedores Linux??",
       "metadescription": "Hoy hablamos de WSL2, o Windows Subsystem Linux, un sistema de virtualización optimizado para Linux, que virtualiza un Kernel de Linux modificado por Microsoft para poder correr contenedores Linux con Docker.",
       "categoria": {
@@ -198,7 +204,7 @@
       "embedId": "_Hne4gm8plo"
     },
     {
-      "id": 122125,
+      "id": "122125",
       "title": "BEST Web Dev Setup? Windows & Linux at the same time (WSL)",
       "metadescription": "Setup the ultimate Web Development environment with Windows and Linux 🐧 using WSL. Make the command line look cool, then add node, git, docker, and more. ",
       "categoria": {
@@ -209,7 +215,7 @@
       "embedId": "-atblwgc63E"
     },
     {
-      "id": 16,
+      "id": "16",
       "title": "¿Qué es JavaScript?",
       "metadescription": "JavaScript: ¿qué es y cómo se hizo este lenguaje que genera muchas discusiones y debates entre la gente del área de desarrollo? \n\n Genesys y Gabriela nos hablan exactamente de esto en este Alura Tips.",
       "categoria": {
@@ -220,7 +226,7 @@
       "embedId": "GJfOSoaXk4s"
     },
     {
-      "id": 17,
+      "id": "17",
       "title": "Equipo Front End #AluraMás",
       "metadescription": "JavaScript: ¿qué es y cómo se hizo este lenguaje que genera muchas discusiones y debates entre la gente del área de desarrollo? \n\nGenesys y Gabriela nos hablan exactamente de esto en este Alura Tips.",
       "categoria": {
@@ -231,7 +237,7 @@
       "embedId": "1gUCu2e_JiM"
     },
     {
-      "id": 18,
+      "id": "18",
       "title": "¿Cómo ser un Profesional en T? Conociendo al Tech Guide",
       "metadescription": "El término profesional en T es muy utilizado en los días de hoy, pero ¿sabes que quiere decir y cómo ser un profesional en T? \n\nEn este video Christian Velasco, Head de Alura Latam, no ayudará a enteder sobre ese término y nos explicará como podemos convertirnos en un profesional en T, enseñándonos una herramienta muy válida para quienes quiere aprender más al respecto.",
       "categoria": {
@@ -242,7 +248,7 @@
       "embedId": "0udk1vXmwkc"
     },
     {
-      "id": 19,
+      "id": "19",
       "title": "Videos alura",
       "metadescription": "frontend team",
       "categoria": {
@@ -253,7 +259,7 @@
       "embedId": "UuAX5azcvDQ"
     },
     {
-      "id": 20,
+      "id": "20",
       "title": "Videos alura",
       "metadescription": "frontend team",
       "categoria": {
@@ -264,7 +270,7 @@
       "embedId": "PlaQ913yggM"
     },
     {
-      "id": 21,
+      "id": "21",
       "title": "Videos alura",
       "metadescription": "Habllando del crud",
       "categoria": {
@@ -283,7 +289,7 @@
         "color": "#00ffd5"
       },
       "metadescription": "10 hrs de cupid para programar mientras Jhon Ceena baila",
-      "id": 122127
+      "id": "122127"
     },
     {
       "title": "Las 6 maneras de aplicar estilos CSS en React",
@@ -394,6 +400,61 @@
         "color": "#00ffd5"
       },
       "id": "a4ba537f-189f-429c-8b48-89dcde4165d1"
+    },
+    {
+      "metadescription": " Cafe punto Tech: ¿Por que las empresas buscan especialistas en Javascript?\n",
+      "title": " Cafe punto Tech: ¿Por que las empresas buscan especialistas en Javascript?",
+      "embedId": "1Nk2FfJFig2Y",
+      "img": "1Nk2FfJFig2Y",
+      "categoria": {
+        "nombre": "alura",
+        "color": "#7b00e0"
+      },
+      "id": "8c0c2d45-7363-46e6-870f-4d6cfe73e3e0"
+    },
+    {
+      "metadescription": "Acaban de salir los resultados de la encuesta de State of CSS y estan son 5 nuevas funcionalidades que están disponibles para usar en tu sitio o aplicación web.\n",
+      "title": "5 NUEVAS PROPIEDADES CSS QUE LO CAMBIARÁN TODO",
+      "embedId": "CgHJR8wqnIU",
+      "img": "CgHJR8wqnIU",
+      "categoria": {
+        "nombre": "CSS",
+        "color": "#ff0000"
+      },
+      "id": "e0dc5a20-f8fd-4c62-9dc2-df6c9b220e1c"
+    },
+    {
+      "metadescription": "Vamos a construir 20 proyectos completos con CSS, para que puedas practicar más del lenguaje y aprendas algunos trucos sobre animaciones, 3D, layouts, selectores avanzados y más. #css #tutoriales #desarrolloweb\n",
+      "title": "🔥 20 PROYECTOS COMPLETOS CON CSS",
+      "embedId": "XZTt1NFDnDw",
+      "img": "XZTt1NFDnDw",
+      "categoria": {
+        "nombre": "CSS",
+        "color": "#ff0000"
+      },
+      "id": "558ce7fa-87f3-4988-a6e3-3a7ce5125694"
+    },
+    {
+      "metadescription": "Cree 3 ejemplos de cuadrículas CSS receptivas para dominar los conceptos básicos de este poderoso sistema de diseño. https://github.com/fireship-io/224-an...\n",
+      "title": "The Joy of CSS Grid - Cree 3 diseños receptivos bellamente simples",
+      "embedId": "705XCEruZFs",
+      "img": "705XCEruZFs",
+      "categoria": {
+        "nombre": "CSS",
+        "color": "#ff0000"
+      },
+      "id": "4aa9b670-e5a9-4dc4-920e-99e9eefb529a"
+    },
+    {
+      "metadescription": "En este tutorial, vas a aprender a dibujar formas con CSS con un ejercicio muy fácil de aprender y replicar. Este tutorial es parte de un curso completo de HTML5 y CSS3 en Platzi. \n",
+      "title": "Dibujando con CSS",
+      "embedId": "IP3OmWpUuIg",
+      "img": "IP3OmWpUuIg",
+      "categoria": {
+        "nombre": "CSS",
+        "color": "#ff0000"
+      },
+      "id": "c8667563-683b-41f0-b30b-8bc5e3d74df0"
     }
   ]
 }
