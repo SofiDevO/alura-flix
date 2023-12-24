@@ -71,7 +71,9 @@ const VideoLista = () => {
         return (
           <div key={categoria}>
             {/* Renderiza el título de la categoría con el color de fondo */}
-            <CategoriaTitulo color={videos[0].categoria.color}>{categoria}</CategoriaTitulo>
+            <CategoriaTitulo color={videos[0].categoria.color}>
+              {categoria}
+            </CategoriaTitulo>
             <Slider {...settings}>
               {videos.map((video) => {
                 const { id, title, img, categoria } = video;
@@ -79,14 +81,12 @@ const VideoLista = () => {
                   // Renderiza un enlace a la página de detalle de video
                   <Link to={`/videos/${id}`} key={id}>
                     <CajaVideo>
-
-                        {/* Renderiza la imagen del video con un borde del color de la categoría */}
-                        <ImagenVideo
-                          src={`http://img.youtube.com/vi/${img}/maxresdefault.jpg`}
-                          alt={title}
-                          style={{ borderColor: categoria.color }}
-                        />
-
+                      {/* Renderiza la imagen del video con un borde del color de la categoría */}
+                      <ImagenVideo
+                        src={`http://img.youtube.com/vi/${img}/maxresdefault.jpg`}
+                        alt={title}
+                        style={{ borderColor: categoria.color }}
+                      />
                     </CajaVideo>
                   </Link>
                 );
@@ -112,7 +112,7 @@ const CajaVideo = styled.div`
   }
 `;
 const ImagenVideo = styled.img`
-  width: 70%;
+  width: 97%;
   border: 3px solid ${(props) => props.borderColor}; // Establece el color del borde con base en la categoría
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -130,5 +130,6 @@ const CategoriaTitulo = styled.h3`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  background-color: ${(props) => props.color}; // Establece el color de fondo con base en la categoría
+  background-color: ${(props) =>
+    props.color}; // Establece el color de fondo con base en la categoría
 `;

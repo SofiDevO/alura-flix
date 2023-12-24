@@ -2,10 +2,11 @@ import axios from "axios";
 
 // Crea una instancia de axios con la base de la API
 export const api = axios.create({
+  //Comenta este url para usar en modo local
   baseURL: "https://fake-api-aluraflix-two.vercel.app",
-  /* usa este url pra hacer pruebas CRUD http://localhost:5555/  ,  
-  https://fake-api-aluraflix-two.vercel.app/
-  */
+  /* quita el comentario de esta API  pra hacer pruebas CRUD
+  deberás ejecutar el comando `json-server -w -p 5555 db.json` */
+  // baseURL: "http://localhost:5555/",
 });
 
 // Función para realizar una búsqueda en la API
@@ -17,13 +18,10 @@ export const buscar = async (url, setData) => {
     // Establece los datos recibidos en la función setData
     setData(response.data);
   } catch (error) {
-    
     console.error("Error al obtener los datos:", error);
     // Lanza el error para que pueda ser manejado en el lugar donde se llama a esta función
-    
   }
 };
-
 
 // Función para obtener categorías desde la API
 export const obtenerCategorias = async () => {
@@ -36,7 +34,6 @@ export const obtenerCategorias = async () => {
   } catch (error) {
     console.error("Error al obtener las categorías:", error);
     // Lanza el error para que pueda ser manejado en el lugar donde se llama a esta función
-    
   }
 };
 
@@ -53,9 +50,8 @@ export const agregarCategoria = async (data) => {
     return response.data;
   } catch (error) {
     console.error("Error al agregar la categoría:", error);
-    
+
     // Lanza el error para que pueda ser manejado en el lugar donde se llama a esta función
-    
   }
 };
 
@@ -72,9 +68,8 @@ export const editarCategoria = async (id, data) => {
     return response.data;
   } catch (error) {
     console.error("Error al editar la categoría:", error);
-    
+
     // Lanza el error para que pueda ser manejado en el lugar donde se llama a esta función
-    
   }
 };
 
@@ -90,10 +85,8 @@ export const eliminarCategoria = async (id) => {
     // Devuelve los datos de respuesta de la API
     return response.data;
   } catch (error) {
-    
     console.error("Error al eliminar la categoría:", error);
     // Lanza el error para que pueda ser manejado en el lugar donde se llama a esta función
-    
   }
 };
 
@@ -111,6 +104,5 @@ export const agregarVideo = async (data) => {
   } catch (error) {
     console.error("Error al enviar los datos:", error);
     // Lanza el error para que pueda ser manejado en el lugar donde se llama a esta función
-    
   }
 };
